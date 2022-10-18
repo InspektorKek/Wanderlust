@@ -11,6 +11,7 @@
 		B37ECB0F28FE912A007DA273 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37ECB0E28FE912A007DA273 /* ContentView.swift */; };
 		B37ECB1128FE912C007DA273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1028FE912C007DA273 /* Assets.xcassets */; };
 		B37ECB1528FE912C007DA273 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */; };
+		E9F455D128FEBC13009FA7B4 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		B37ECB1028FE912C007DA273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wanderlust.entitlements; sourceTree = "<group>"; };
 		B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */,
 				B37ECB0E28FE912A007DA273 /* ContentView.swift */,
+				E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */,
 				B37ECB1028FE912C007DA273 /* Assets.xcassets */,
 				B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */,
 				B37ECB1328FE912C007DA273 /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				B37ECB0F28FE912A007DA273 /* ContentView.swift in Sources */,
 				B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */,
+				E9F455D128FEBC13009FA7B4 /* LaunchScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
