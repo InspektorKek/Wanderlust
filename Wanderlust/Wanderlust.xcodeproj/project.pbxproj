@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3458D402906FFD700B97B35 /* WorldScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */; };
+		B3458D422906FFE200B97B35 /* WorldScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */; };
+		B3458D4529070B3900B97B35 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D4429070B3900B97B35 /* Country.swift */; };
 		B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */; };
 		B37ECB0F28FE912A007DA273 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37ECB0E28FE912A007DA273 /* ContentView.swift */; };
 		B37ECB1128FE912C007DA273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1028FE912C007DA273 /* Assets.xcassets */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldScreenView.swift; sourceTree = "<group>"; };
+		B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldScreenViewModel.swift; sourceTree = "<group>"; };
+		B3458D4429070B3900B97B35 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		B37ECB0928FE912A007DA273 /* Wanderlust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wanderlust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderlustApp.swift; sourceTree = "<group>"; };
 		B37ECB0E28FE912A007DA273 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +41,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3458D432906FFE600B97B35 /* WorldScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */,
+				B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */,
+				B3458D4429070B3900B97B35 /* Country.swift */,
+			);
+			path = WorldScreen;
+			sourceTree = "<group>";
+		};
 		B37ECB0028FE912A007DA273 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */,
+				B3458D432906FFE600B97B35 /* WorldScreen */,
 				B37ECB0E28FE912A007DA273 /* ContentView.swift */,
 				E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */,
 				B37ECB1028FE912C007DA273 /* Assets.xcassets */,
@@ -143,8 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B37ECB0F28FE912A007DA273 /* ContentView.swift in Sources */,
+				B3458D4529070B3900B97B35 /* Country.swift in Sources */,
 				B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */,
+				B3458D422906FFE200B97B35 /* WorldScreenViewModel.swift in Sources */,
 				E9F455D128FEBC13009FA7B4 /* LaunchScreen.swift in Sources */,
+				B3458D402906FFD700B97B35 /* WorldScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
