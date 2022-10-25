@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    let viewModel = WorldScreenViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        TabView {
+            WorldScreenView(viewModel: viewModel)
+                 .tabItem {
+                     Label("Map", systemImage: "globe.europe.africa.fill")
+                 }
+             ContentView()
+                 .tabItem {
+                     Label("Profile", systemImage: "person.crop.circle.fill")
+                 }
+         }
+         .tint(.accentColor)
     }
 }
 
