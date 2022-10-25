@@ -12,30 +12,37 @@ struct gameResults: View {
     var body: some View {
 
         VStack(content: {
+            
+            Text("Game Over")
+                .font(.system(size: 40, weight: .bold, design: .monospaced))
+                .offset(y: 30)
+            
+            
             Image("looser")
-                .offset(y: 120)
+                .resizable()
+                .frame(width: 250, height: 400)
+                .offset(y: 10)
                 .frame(maxWidth: .infinity, maxHeight: .infinity) // 1
                 .background(Color.white)
             
-                 
-            Text("Game Over")
-                .font(.system(size: 36, weight: .bold, design: .monospaced))
-                .offset(y: -15)
-            
+        
             Text("You can do better!")
                 .font(.system(size: 25, design: .monospaced))
                 .foregroundColor(.black)
+                .offset(y: -20)
 
             
             Button("Try Again!") { ///ACTION NEEDED!//
                 /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
             }
+            .shadow(color: .gray, radius: 5, x: 7, y: 2)
             .padding()
             .buttonStyle(.borderedProminent)
             .controlSize(.large)
             .foregroundColor(.white)
             .font(.system(size: 25, weight: .bold))
             .tint(.yellow)
+            .offset(y: -15)
             
             Button("Go to the Map") { ///ACTION NEEDED!//
                 /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
@@ -43,6 +50,7 @@ struct gameResults: View {
             .controlSize(.large)
             .font(.system(size: 25, weight: .bold))
             .foregroundColor(.red)
+            
 
             
         }
