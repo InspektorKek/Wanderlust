@@ -14,7 +14,6 @@
 		E9240B1229040E9900FD4926 /* gameResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9240B1129040E9900FD4926 /* gameResults.swift */; };
 		E9240B182904220100FD4926 /* winGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9240B172904220100FD4926 /* winGameScreen.swift */; };
 		E933BDBF2906A075004228CB /* HalfASheet in Frameworks */ = {isa = PBXBuildFile; productRef = E933BDBE2906A075004228CB /* HalfASheet */; };
-		E933BDC32906CE54004228CB /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933BDC22906CE54004228CB /* StoryView.swift */; };
 		E9F455D128FEBC13009FA7B4 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +26,6 @@
 		B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9240B1129040E9900FD4926 /* gameResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameResults.swift; sourceTree = "<group>"; };
 		E9240B172904220100FD4926 /* winGameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = winGameScreen.swift; sourceTree = "<group>"; };
-		E933BDC22906CE54004228CB /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +65,6 @@
 				E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */,
 				E9240B1129040E9900FD4926 /* gameResults.swift */,
 				E9240B172904220100FD4926 /* winGameScreen.swift */,
-				E933BDC22906CE54004228CB /* StoryView.swift */,
 				B37ECB1028FE912C007DA273 /* Assets.xcassets */,
 				B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */,
 				B37ECB1328FE912C007DA273 /* Preview Content */,
@@ -159,7 +156,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E933BDC32906CE54004228CB /* StoryView.swift in Sources */,
 				E9240B1229040E9900FD4926 /* gameResults.swift in Sources */,
 				B37ECB0F28FE912A007DA273 /* ContentView.swift in Sources */,
 				B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */,
