@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct MainTabBarView: View {
+    let viewModel = WorldScreenViewModel()
+    
     var body: some View {
         TabView {
-            ContentView()
+            WorldScreenView(viewModel: viewModel)
                 .tabItem {
                     Label("Map", systemImage: "globe.europe.africa.fill")
                 }
-            ContentView()
+            ProfileScreenView()
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle.fill")
                 }

@@ -7,14 +7,14 @@
 
 import Foundation
 
-protocol Countriable {
-    var name: String { get }
-    var isAvailable: Bool { get set }
-    var id: UUID { get }
-}
-
-struct Country: Countriable, Identifiable {
+struct Country: Identifiable {
     let name: String
     var isAvailable: Bool
     let id = UUID()
+    
+    let constantOffset: OffsetMultiply
+    
+    struct OffsetMultiply {
+        let x,y: Double
+    }
 }

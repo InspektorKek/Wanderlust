@@ -11,7 +11,7 @@ import SwiftUI
 struct WanderlustApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabBarView()
         }
     }
 }

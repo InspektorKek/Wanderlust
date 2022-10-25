@@ -12,9 +12,7 @@ struct WorldScreenView<Model>: View where Model: CoutriesViewModel {
     @ObservedObject var viewModel: Model
     
     @State private var size: CGSize = .zero
-    
-    @State var isAvailable: Bool = false
-    
+        
     var body: some View {
         VStack {
             Spacer()
@@ -31,19 +29,16 @@ struct WorldScreenView<Model>: View where Model: CoutriesViewModel {
                 }
                 .overlay {
                     Group {
-                        Button(action: {
-                            print("Africa")
-                        }, label: {
-                            CircleView()
-                        })
-                        .offset(x: self.size.width * 0.25, y: self.size.height * 0.2)
-                        
-                        Button(action: {
-                            print("Mexico")
-                        }, label: {
-                            CircleView()
-                        })
-                        .offset(x: -self.size.width * 0.45, y: 20)
+                        ForEach(viewModel.datasource.data.indices, id: \.self) { index in
+                            let model = self.viewModel.datasource.data[index]
+                            Button(action: {
+                                print("\(model.name)")
+                            }, label: {
+                                CoutryView(model: model)
+                            })
+                            .disabled(!model.isAvailable)
+                            .offset(x: self.size.width * model.constantOffset.x, y: self.size.height * model.constantOffset.y)
+                        }
                     }
                 }
             HStack {
@@ -51,35 +46,9 @@ struct WorldScreenView<Model>: View where Model: CoutriesViewModel {
                 Image("icon_map_boy")
             }
         }
-//        List {
-//            ForEach(viewModel.datasource.data.indices, id:           \.self) { index in
-//                Text("\(self.viewModel.datasource.data[index].name)")
-//            }
-//        }
         .onAppear {
             self.viewModel.action.fetchCountries()
         }
-    }
-    
-    var circle: some View {
-        Circle()
-            .frame(width: 16, height: 16)
-            .foregroundColor(.black)
-            .frame(width: 50, height: 50)
-    }
-}
-
-struct CircleView: View {
-    @State var isAvailable: Bool = false
-    
-    var body: some View {
-        Circle()
-            .frame(width: 16, height: 16)
-            .foregroundColor(isAvailable ? .red : .black)
-            .frame(width: 50, height: 50)
-            .onTapGesture {
-                isAvailable.toggle()
-            }
     }
 }
 
@@ -88,6 +57,6 @@ struct WorldScreenView_Previews: PreviewProvider {
         let viewModel = WorldScreenViewModel()
         WorldScreenView(viewModel: viewModel)
 //            .previewLayout(.sizeThatFits)
-//            .previewDevice("iPhone SE (3rd generation)")
+            .previewDevice("iPhone SE (3rd generation)")
     }
 }

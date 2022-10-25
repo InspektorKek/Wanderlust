@@ -8,7 +8,7 @@
 import Foundation
 
 protocol WorldScreenDataModelDatasource {
-    var data: [Countriable] { get set }
+    var data: [Country] { get set }
 }
 
 protocol WorldScreenDataModelAction {
@@ -24,7 +24,7 @@ protocol CoutriesViewModel: ObservableObject {
 final class WorldScreenViewModel: CoutriesViewModel, WorldScreenDataModelDatasource, WorldScreenDataModelAction {
     
     // MARK: - Datasource
-    @Published var data: [Countriable] = []
+    @Published var data: [Country] = []
     
     var datasource: WorldScreenDataModelDatasource {
         get { return _datasource }
@@ -48,16 +48,16 @@ final class WorldScreenViewModel: CoutriesViewModel, WorldScreenDataModelDatasou
 
 extension WorldScreenDataModelAction {
     #warning("Get saved countries")
-    static func getUsersSavedCountries() -> [Countriable] {
+    static func getUsersSavedCountries() -> [Country] {
         return nil ?? getDefaultCountries()
     }
     
-    private static func getDefaultCountries() -> [Countriable] {
+    private static func getDefaultCountries() -> [Country] {
         return [
-            Country(name: "Mexico", isAvailable: true),
-            Country(name: "Brazil", isAvailable: false),
-            Country(name: "Russia", isAvailable: false),
-            Country(name: "South Africa", isAvailable: false)
+            Country(name: "Mexico", isAvailable: true, constantOffset: Country.OffsetMultiply(x: -0.45, y: 0.1)),
+            Country(name: "South Africa", isAvailable: false, constantOffset: Country.OffsetMultiply(x: 0.25, y: 0.2)),
+            Country(name: "Brazil", isAvailable: false, constantOffset: Country.OffsetMultiply(x: -0.22, y: 0.25)),
+            Country(name: "Russia", isAvailable: false, constantOffset: Country.OffsetMultiply(x: 0.3, y: -0.3))
         ]
     }
 }
