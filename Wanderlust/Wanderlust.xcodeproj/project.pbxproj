@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B33C317629068C3F00F5559B /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33C317529068C3F00F5559B /* MainTabBarView.swift */; };
 		B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */; };
 		B37ECB0F28FE912A007DA273 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37ECB0E28FE912A007DA273 /* ContentView.swift */; };
 		B37ECB1128FE912C007DA273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1028FE912C007DA273 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B33C317529068C3F00F5559B /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		B37ECB0928FE912A007DA273 /* Wanderlust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wanderlust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderlustApp.swift; sourceTree = "<group>"; };
 		B37ECB0E28FE912A007DA273 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */,
 				B37ECB0E28FE912A007DA273 /* ContentView.swift */,
+				B33C317529068C3F00F5559B /* MainTabBarView.swift */,
 				E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */,
 				E9240B1129040E9900FD4926 /* gameResults.swift */,
 				E9240B172904220100FD4926 /* winGameScreen.swift */,
@@ -160,6 +163,7 @@
 				B37ECB0F28FE912A007DA273 /* ContentView.swift in Sources */,
 				B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */,
 				E9F455D128FEBC13009FA7B4 /* LaunchScreen.swift in Sources */,
+				B33C317629068C3F00F5559B /* MainTabBarView.swift in Sources */,
 				E9240B182904220100FD4926 /* winGameScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
