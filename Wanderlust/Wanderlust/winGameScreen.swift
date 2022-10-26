@@ -11,9 +11,11 @@ struct WinGameScreen: View {
     var body: some View {
         NavigationStack {
             VStack {
+                Spacer()
+                
                 Text("Amazing job!")
                     .font(.system(size: 45, weight: .bold))
-                    .foregroundColor(.accentColor) //Title color//
+                    .foregroundColor(.accentColor)
                 
                 Spacer()
                 
@@ -22,6 +24,7 @@ struct WinGameScreen: View {
                     .foregroundColor(.black)
                 
                 Spacer()
+                
                 ZStack {
                     Image(systemName: "trophy.fill")
                         .resizable()
@@ -35,28 +38,31 @@ struct WinGameScreen: View {
                     
                 }
                 
-                Text("Mexican Explorer \n 🏆🏅🗺")
+                Text("Mexican Explorer 🏅")
                     .font(.system(size: 25))
-
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.accentColor)
+                    .bold()
+                
+                
                 Spacer()
                 
-                Text("You unlocked another country")
+                Text("You've unlocked another country!")
                     .font(.system(size: 25))
                     .foregroundColor(.black)
                 
-                Spacer()
                 
-                Button(action: {
-                    print("sone")
+               Button(action: {
+                   print("sone")
                 }
-                       , label: {
-                    NavigationLink(destination: LaunchScreen()) { Text("Got to the Map") }
+                , label: {
+                NavigationLink(destination: GameResults()) { Text("Got to the Map") }
                 })
-                .shadow(color: .gray, radius: 5, x: 7, y: 2)
-                .buttonStyle(.borderedProminent)
-                .font(.system(size: 25, weight: .bold))
-                .foregroundColor(.white)
-                .controlSize(.large)
+                     .shadow(color: .gray, radius: 5, x: 7, y: 2)
+                     .buttonStyle(.borderedProminent)
+                     .font(.system(size: 25, weight: .bold))
+                     .foregroundColor(.white)
+                     .controlSize(.large)
                 
             }
             .padding(.vertical)
