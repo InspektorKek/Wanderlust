@@ -11,12 +11,15 @@
 		B3458D402906FFD700B97B35 /* WorldScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */; };
 		B3458D422906FFE200B97B35 /* WorldScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */; };
 		B3458D4529070B3900B97B35 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D4429070B3900B97B35 /* Country.swift */; };
+		B35F659529085BD7007C7161 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659429085BD7007C7161 /* Storage.swift */; };
+		B35F659729085C06007C7161 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659629085C06007C7161 /* AppData.swift */; };
+		B35F659929085D8C007C7161 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659829085D8C007C7161 /* Reward.swift */; };
+		B35F659C29087B6D007C7161 /* GameScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659B29087B6D007C7161 /* GameScreenView.swift */; };
 		B370A11F2907D5F5007D19AE /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */; };
 		B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */; };
 		B37ECB1128FE912C007DA273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1028FE912C007DA273 /* Assets.xcassets */; };
 		B37ECB1528FE912C007DA273 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */; };
 		B39C51472907E490009F245F /* CoutryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C51462907E490009F245F /* CoutryView.swift */; };
-		B39C515129085426009F245F /* Wanderlust.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B39C514F29085426009F245F /* Wanderlust.xcdatamodeld */; };
 		E9F455D128FEBC13009FA7B4 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +28,10 @@
 		B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldScreenView.swift; sourceTree = "<group>"; };
 		B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldScreenViewModel.swift; sourceTree = "<group>"; };
 		B3458D4429070B3900B97B35 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		B35F659429085BD7007C7161 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		B35F659629085C06007C7161 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		B35F659829085D8C007C7161 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		B35F659B29087B6D007C7161 /* GameScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenView.swift; sourceTree = "<group>"; };
 		B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenView.swift; sourceTree = "<group>"; };
 		B37ECB0928FE912A007DA273 /* Wanderlust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wanderlust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderlustApp.swift; sourceTree = "<group>"; };
@@ -32,7 +39,6 @@
 		B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wanderlust.entitlements; sourceTree = "<group>"; };
 		B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B39C51462907E490009F245F /* CoutryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoutryView.swift; sourceTree = "<group>"; };
-		B39C515029085426009F245F /* Wanderlust.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wanderlust.xcdatamodel; sourceTree = "<group>"; };
 		E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,10 +58,37 @@
 			children = (
 				B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */,
 				B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */,
-				B39C51492907E4DC009F245F /* Model */,
 				B39C51482907E4C8009F245F /* View */,
 			);
 			path = WorldScreen;
+			sourceTree = "<group>";
+		};
+		B35F659A29085FBE007C7161 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B35F659429085BD7007C7161 /* Storage.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B35F659F29096F5A007C7161 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B35F659629085C06007C7161 /* AppData.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B35F65A029096F75007C7161 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */,
+				B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */,
+				B35F659B29087B6D007C7161 /* GameScreenView.swift */,
+				B3458D432906FFE600B97B35 /* WorldScreen */,
+				B370A11D2907C612007D19AE /* MainTabBar */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		B370A11D2907C612007D19AE /* MainTabBar */ = {
@@ -86,11 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */,
-				B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */,
-				B3458D432906FFE600B97B35 /* WorldScreen */,
-				B370A11D2907C612007D19AE /* MainTabBar */,
-				E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */,
-				B39C514F29085426009F245F /* Wanderlust.xcdatamodeld */,
+				B35F65A029096F75007C7161 /* Modules */,
+				B39C51492907E4DC009F245F /* Models */,
+				B35F659F29096F5A007C7161 /* Services */,
+				B35F659A29085FBE007C7161 /* Utility */,
 				B37ECB1028FE912C007DA273 /* Assets.xcassets */,
 				B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */,
 				B37ECB1328FE912C007DA273 /* Preview Content */,
@@ -114,12 +146,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		B39C51492907E4DC009F245F /* Model */ = {
+		B39C51492907E4DC009F245F /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				B3458D4429070B3900B97B35 /* Country.swift */,
+				B35F659829085D8C007C7161 /* Reward.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,13 +227,16 @@
 			files = (
 				B39C51472907E490009F245F /* CoutryView.swift in Sources */,
 				B3458D4529070B3900B97B35 /* Country.swift in Sources */,
-				B39C515129085426009F245F /* Wanderlust.xcdatamodeld in Sources */,
 				B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */,
 				B3458D422906FFE200B97B35 /* WorldScreenViewModel.swift in Sources */,
+				B35F659929085D8C007C7161 /* Reward.swift in Sources */,
 				E9F455D128FEBC13009FA7B4 /* LaunchScreen.swift in Sources */,
+				B35F659529085BD7007C7161 /* Storage.swift in Sources */,
 				B370A11F2907D5F5007D19AE /* ProfileScreenView.swift in Sources */,
+				B35F659C29087B6D007C7161 /* GameScreenView.swift in Sources */,
 				B3458D402906FFD700B97B35 /* WorldScreenView.swift in Sources */,
 				B33C317629068C3F00F5559B /* MainTabBarView.swift in Sources */,
+				B35F659729085C06007C7161 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,19 +454,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B39C514F29085426009F245F /* Wanderlust.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B39C515029085426009F245F /* Wanderlust.xcdatamodel */,
-			);
-			currentVersion = B39C515029085426009F245F /* Wanderlust.xcdatamodel */;
-			path = Wanderlust.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B37ECB0128FE912A007DA273 /* Project object */;
 }

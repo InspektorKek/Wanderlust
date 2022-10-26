@@ -13,6 +13,7 @@ protocol WorldScreenDataModelDatasource {
 
 protocol WorldScreenDataModelAction {
     func fetchCountries()
+    func setAvailableBy(countryID id: UUID)
 }
 
 // Base model protocol
@@ -42,22 +43,12 @@ final class WorldScreenViewModel: CoutriesViewModel, WorldScreenDataModelDatasou
     }
     
     func fetchCountries() {
-        data = Self.getUsersSavedCountries()
-    }
-}
-
-extension WorldScreenDataModelAction {
-    #warning("Get saved countries")
-    static func getUsersSavedCountries() -> [Country] {
-        return nil ?? getDefaultCountries()
+        data = AppData.countries
     }
     
-    private static func getDefaultCountries() -> [Country] {
-        return [
-            Country(name: "Mexico", isAvailable: true, constantOffset: Country.OffsetMultiply(x: -0.45, y: 0.1)),
-            Country(name: "South Africa", isAvailable: false, constantOffset: Country.OffsetMultiply(x: 0.25, y: 0.2)),
-            Country(name: "Brazil", isAvailable: false, constantOffset: Country.OffsetMultiply(x: -0.22, y: 0.25)),
-            Country(name: "Russia", isAvailable: false, constantOffset: Country.OffsetMultiply(x: 0.3, y: -0.3))
-        ]
+    func setAvailableBy(countryID id: UUID) {
+        if let index = AppData.countries.firstIndex(where: { $0.id == id }) {
+            AppData.countries[index].isAvailable = true
+        }
     }
 }

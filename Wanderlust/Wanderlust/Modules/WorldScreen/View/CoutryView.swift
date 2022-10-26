@@ -14,12 +14,12 @@ struct CoutryView: View {
         VStack {
             Image(systemName: model.isAvailable ? "play.fill" : "lock.fill")
                 .frame(width: 16, height: 16)
-                .foregroundColor(model.isAvailable ? .accentColor : .gray)
-            Text(verbatim: model.name)
+            Text(model.name.rawValue)
                 .padding(.horizontal)
                 .background(model.isAvailable ? Color.accentColor : .gray)
                 .foregroundColor(.white)
                 .cornerRadius(8)
         }
+        .foregroundColor(model.isAvailable ? .accentColor : .gray)
     }
 }

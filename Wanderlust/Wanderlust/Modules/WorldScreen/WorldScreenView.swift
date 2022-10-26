@@ -12,7 +12,8 @@ struct WorldScreenView<Model>: View where Model: CoutriesViewModel {
     @ObservedObject var viewModel: Model
     
     @State private var size: CGSize = .zero
-        
+    @State private var isGamePresented = false
+    
     var body: some View {
         VStack {
             Spacer()
@@ -32,12 +33,15 @@ struct WorldScreenView<Model>: View where Model: CoutriesViewModel {
                         ForEach(viewModel.datasource.data.indices, id: \.self) { index in
                             let model = self.viewModel.datasource.data[index]
                             Button(action: {
-                                print("\(model.name)")
+                                self.isGamePresented.toggle()
                             }, label: {
                                 CoutryView(model: model)
                             })
                             .disabled(!model.isAvailable)
-                            .offset(x: self.size.width * model.constantOffset.x, y: self.size.height * model.constantOffset.y)
+                            .fullScreenCover(isPresented: $isGamePresented) {
+                                GameScreenView(country: model)
+                            }
+                            .offset(x: self.size.width * model.worldOffset.x, y: self.size.height * model.worldOffset.y)
                         }
                     }
                 }
@@ -56,7 +60,6 @@ struct WorldScreenView_Previews: PreviewProvider {
     static var previews: some View {
         let viewModel = WorldScreenViewModel()
         WorldScreenView(viewModel: viewModel)
-//            .previewLayout(.sizeThatFits)
             .previewDevice("iPhone SE (3rd generation)")
     }
 }
