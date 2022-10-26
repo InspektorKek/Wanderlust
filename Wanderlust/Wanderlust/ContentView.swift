@@ -19,7 +19,7 @@ var body: some View {
                .font(.system(size:35))
                 .fontWeight(.medium)
                 .font(.title)
-        Spacer()
+                .offset(x: -1, y: -500)
            
             startButton
             VoiceButton()
@@ -41,7 +41,7 @@ var body: some View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 259, height: 400)
-                    .position(x: 317, y: 275)
+                    .position(x: 340, y: 260)
             }
             .frame(width: 635, height: 635)
         }
@@ -53,14 +53,16 @@ var body: some View {
         Button(action: {
             print("Rounded Button")
         }, label: {
-            Text("Play               ")
+            Text("Play")
+                .padding()
+                .padding(.horizontal, 30)
                 .font(.body)
                 .foregroundColor(Color.white)
         .background(Color.orange.cornerRadius(10))
         .buttonBorderShape(.roundedRectangle(radius: 12))
                         .fontWeight(.medium)
-                        .position(x:310, y: 620)
-            
+                  
+                        
 
     
         })
@@ -69,7 +71,7 @@ var body: some View {
 
 struct VoiceButton: View {
     @State var isPressed = false
-    
+
     var imageName: String {
         isPressed ? "speaker.wave.2.fill" : "speaker.slash.fill"
     }
@@ -80,9 +82,10 @@ struct VoiceButton: View {
             } label: {
                 Image(systemName: imageName)
                     .resizable()
-                    .frame(width: 50, height: 50)
+                    .frame(width: 29, height: 24)
                   
             }
+            .offset(x: 150, y: -700)
             .padding()
             
         }
