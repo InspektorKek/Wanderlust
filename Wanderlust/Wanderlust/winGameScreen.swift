@@ -1,88 +1,66 @@
 //
-//  winGameScreen.swift
+//  WinGameScreen.swift
 //  Wanderlust
 //
 //  Created by Beatriz Gomes on 22/10/22.
 //
 
 import SwiftUI
-import HalfASheet
 
-
-struct winGameScreen: View {
+struct WinGameScreen: View {
     var body: some View {
-        VStack {
-            
-            Text("Amazing job!")
-                .font(.system(size: 45, weight: .bold))
-                .foregroundColor(.yellow) //// TITLE COLOR???//
-                .offset(y: 30)
-            
-            Image("mexicoFlag")
-                .resizable()
-                .frame(width: 290, height: 290)
-                .offset(y: -15)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color.white)
-                .scaledToFit()
-
-
-        HStack (spacing: 25){
+        NavigationStack {
+            VStack {
+                Text("Amazing job!")
+                    .font(.system(size: 45, weight: .bold))
+                    .foregroundColor(.accentColor) //Title color//
                 
-            Image(systemName: "star.fill")
-                    .resizable()
-                    .frame(width: 55, height: 55)
-                    .foregroundColor(Color(.systemYellow))
-                    .offset(y: -50)
-                    .shadow(color: .gray, radius: 5, x: 7, y: 2)
-
-
+                Spacer()
                 
-            Image(systemName: "star.fill")
-                    .resizable()
-                    .frame(width: 55, height: 55)
-                    .foregroundColor(Color(.systemYellow))
-                    .offset(y: -50)
-                    .shadow(color: .gray, radius: 5, x: 7, y: 2)
-
+                Text("You conquered Mexico")
+                    .font(.system(size: 25))
+                    .foregroundColor(.black)
                 
-            Image(systemName: "star")
-                    .resizable()
-                    .frame(width: 55, height: 55)
-                    .foregroundColor(Color(.systemYellow))
-                    .offset(y: -50)
-                    .shadow(color: .gray, radius: 5, x: 7, y: 2)
+                Spacer()
+                ZStack {
+                    Image(systemName: "trophy.fill")
+                        .resizable()
+                        .foregroundColor(.yellow)
+                        .frame(width: 290, height: 290)
+                    
+                    Image("mexicoFlag")
+                        .resizable()
+                        .frame(width: 150, height: 150)
+                        .offset(y: -60)
+                    
+                }
+                
+                Text("Mexican Explorer \n 🏆🏅🗺")
+                    .font(.system(size: 25))
 
-
+                Spacer()
+                
+                Text("You unlocked another country")
+                    .font(.system(size: 25))
+                    .foregroundColor(.black)
+                
+                Spacer()
+                
+                Button(action: {
+                    print("sone")
+                }
+                       , label: {
+                    NavigationLink(destination: LaunchScreen()) { Text("Got to the Map") }
+                })
+                .shadow(color: .gray, radius: 5, x: 7, y: 2)
+                .buttonStyle(.borderedProminent)
+                .font(.system(size: 25, weight: .bold))
+                .foregroundColor(.white)
+                .controlSize(.large)
+                
             }
-        
-                        
-            Text("You conquered Mexico!")
-                .font(.system(size: 25))
-                .foregroundColor(.black)
-                .offset(y: -20)
-
-            Button("Go Forward") { ///ACTION NEEDED!//
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-            }
-            .shadow(color: .gray, radius: 5, x: 7, y: 2)
-            .padding()
-            .buttonStyle(.borderedProminent)
-            .controlSize(.large)
-            .foregroundColor(.white)
-            .font(.system(size: 25, weight: .bold))
-            .tint(.yellow)
-            .offset(y: -15)
-
-            
-            Button("Go to the Map") { ///ACTION NEEDED!//
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-            }
-            .controlSize(.large)
-            .font(.system(size: 25, weight: .bold))
-            .foregroundColor(.red)
+            .padding(.vertical)
         }
-        
     }
 }
 
@@ -140,8 +118,9 @@ struct winGameScreen: View {
 
 
 
+
 struct winGameScreen_Previews: PreviewProvider {
     static var previews: some View {
-        winGameScreen()
+        WinGameScreen()
     }
 }

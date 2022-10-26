@@ -10,7 +10,7 @@ import SwiftUI
 struct MainTabBarView: View {
     var body: some View {
         TabView {
-            ContentView()
+            WinGameScreen()
                 .tabItem {
                     Label("Map", systemImage: "globe.europe.africa.fill")
                 }
