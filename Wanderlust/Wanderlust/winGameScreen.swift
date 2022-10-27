@@ -16,6 +16,7 @@ struct WinGameScreen: View {
                 Text("Amazing job!")
                     .foregroundColor(.accentColor)
                     .font(.system(size: 45, weight: .bold))
+                
                 Spacer()
                 
                 Text("You conquered Mexico")
@@ -48,7 +49,7 @@ struct WinGameScreen: View {
                 Spacer()
                 
                 Text("You've unlocked another country!")
-                    .font(.system(size: 25))
+                    .font(.system(size: 23))
                     .foregroundColor(.black)
                 
                 
@@ -56,7 +57,7 @@ struct WinGameScreen: View {
                    print("sone")
                 }
                 , label: {
-                NavigationLink(destination: GameResults()) { Text("Got to the Map") }
+                NavigationLink(destination: MainTabBarView()) { Text("Got to the Map") }
                 })
                      .shadow(color: .gray, radius: 5, x: 7, y: 2)
                      .buttonStyle(.borderedProminent)
