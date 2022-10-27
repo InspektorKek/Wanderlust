@@ -9,6 +9,8 @@ import SwiftUI
 
 
 struct GameResults: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         
         NavigationStack {
@@ -50,10 +52,10 @@ struct GameResults: View {
                 .offset(y: -15)
                 
                 Button(action: {
-                    print("sone")
+                    presentationMode.wrappedValue.dismiss()
                 }
                        , label: {
-                    NavigationLink(destination: LaunchScreen()) { Text("Go to the Map") }
+                    Text("Go to the Map")
                 })
                 .controlSize(.large)
                 .font(.system(size: 25, weight: .bold))

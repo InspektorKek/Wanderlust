@@ -10,10 +10,24 @@ import SwiftUI
 struct GameScreenView: View {
     @Environment(\.dismiss) var dismiss
     
+    @State private var isLosePresented = false
+    @State private var isWinPresented = false
+    
     var country: Country
     
     var body: some View {
         NavigationView {
+            VStack {
+                Button("WIN") {
+                    isWinPresented.toggle()
+                }
+                .fullScreenCover(isPresented: $isWinPresented, content: WinGameScreen.init)
+                
+                Button("LOSE") {
+                    isLosePresented.toggle()
+                }
+                .fullScreenCover(isPresented: $isLosePresented, content: GameResults.init)
+            }
             Text("")
                 .navigationTitle(country.name.rawValue)
                 .navigationBarTitleDisplayMode(.inline)

@@ -126,7 +126,7 @@ struct WinGameScreen: View {
 
 
 
-struct winGameScreen_Previews: PreviewProvider {
+struct WinGameScreen_Previews: PreviewProvider {
     static var previews: some View {
         WinGameScreen()
     }
