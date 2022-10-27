@@ -20,6 +20,7 @@ struct WinGameScreen: View {
                 Text("Amazing job!")
                     .foregroundColor(.accentColor)
                     .font(.system(size: 45, weight: .bold))
+                
                 Spacer()
                 
                 Text("You conquered \(country.name.rawValue)")
@@ -52,7 +53,7 @@ struct WinGameScreen: View {
                 Spacer()
                 
                 Text("You've unlocked another country!")
-                    .font(.system(size: 25))
+                    .font(.system(size: 23))
                     .foregroundColor(.black)
                 
                 
