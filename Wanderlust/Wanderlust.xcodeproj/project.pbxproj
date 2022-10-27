@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F93553D290A977400092912 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93553C290A977400092912 /* MainTabBarView.swift */; };
-		1F935549290A980300092912 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935546290A980300092912 /* BackgroundView.swift */; };
-		1F93554A290A980300092912 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935547290A980300092912 /* LaunchScreenView.swift */; };
-		1F93554B290A980300092912 /* VoiceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935548290A980300092912 /* VoiceButtonView.swift */; };
-		1F93554E290A98A400092912 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93554D290A98A400092912 /* ContentView.swift */; };
-		B3458D402906FFD700B97B35 /* WorldScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */; };
-		B3458D422906FFE200B97B35 /* WorldScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */; };
-		B3458D4529070B3900B97B35 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D4429070B3900B97B35 /* Country.swift */; };
-		B35F659529085BD7007C7161 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659429085BD7007C7161 /* Storage.swift */; };
-		B35F659729085C06007C7161 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659629085C06007C7161 /* AppData.swift */; };
-		B35F659929085D8C007C7161 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659829085D8C007C7161 /* Reward.swift */; };
-		B35F659C29087B6D007C7161 /* GameScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659B29087B6D007C7161 /* GameScreenView.swift */; };
-		B370A11F2907D5F5007D19AE /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */; };
-		B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */; };
+		B32EF07A290AB2A300D00B6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93554D290A98A400092912 /* ContentView.swift */; };
+		B32EF07B290AB2A300D00B6B /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659629085C06007C7161 /* AppData.swift */; };
+		B32EF07C290AB2A300D00B6B /* WanderlustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */; };
+		B32EF07D290AB2A300D00B6B /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659429085BD7007C7161 /* Storage.swift */; };
+		B32EF07E290AB2A300D00B6B /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93553C290A977400092912 /* MainTabBarView.swift */; };
+		B32EF07F290AB2A300D00B6B /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D4429070B3900B97B35 /* Country.swift */; };
+		B32EF080290AB2A300D00B6B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9078258290947FE004B2BD4 /* Colors.swift */; };
+		B32EF081290AB2A300D00B6B /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */; };
+		B32EF082290AB2A300D00B6B /* WorldScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */; };
+		B32EF083290AB2A300D00B6B /* WorldScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */; };
+		B32EF084290AB2A300D00B6B /* CoutryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C51462907E490009F245F /* CoutryView.swift */; };
+		B32EF085290AB2A300D00B6B /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659829085D8C007C7161 /* Reward.swift */; };
+		B32EF086290AB2A300D00B6B /* GameScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659B29087B6D007C7161 /* GameScreenView.swift */; };
+		B32EF087290AB2A700D00B6B /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935546290A980300092912 /* BackgroundView.swift */; };
+		B32EF088290AB2A700D00B6B /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935547290A980300092912 /* LaunchScreenView.swift */; };
+		B32EF089290AB2A700D00B6B /* VoiceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935548290A980300092912 /* VoiceButtonView.swift */; };
 		B37ECB1128FE912C007DA273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1028FE912C007DA273 /* Assets.xcassets */; };
 		B37ECB1528FE912C007DA273 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */; };
-		B39C51472907E490009F245F /* CoutryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C51462907E490009F245F /* CoutryView.swift */; };
-		E9078259290947FE004B2BD4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9078258290947FE004B2BD4 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */,
+				1F93554D290A98A400092912 /* ContentView.swift */,
 				B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */,
 				B35F659B29087B6D007C7161 /* GameScreenView.swift */,
 				B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */,
@@ -100,14 +101,9 @@
 				B35F659829085D8C007C7161 /* Reward.swift */,
 				B35F659629085C06007C7161 /* AppData.swift */,
 				B35F659429085BD7007C7161 /* Storage.swift */,
-				1F93553729094B6400092912 /* ContentView.swift */,
 				1F93553C290A977400092912 /* MainTabBarView.swift */,
 				E9078258290947FE004B2BD4 /* Colors.swift */,
 				1F93554C290A980900092912 /* LaunchScreen */,
-				B35F65A029096F75007C7161 /* Modules */,
-				B39C51492907E4DC009F245F /* Models */,
-				B35F659F29096F5A007C7161 /* Services */,
-				B35F659A29085FBE007C7161 /* Utility */,
 				B37ECB1028FE912C007DA273 /* Assets.xcassets */,
 				B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */,
 				B37ECB1328FE912C007DA273 /* Preview Content */,
@@ -193,34 +189,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B39C51472907E490009F245F /* CoutryView.swift in Sources */,
-				B3458D4529070B3900B97B35 /* Country.swift in Sources */,
-				E9078259290947FE004B2BD4 /* Colors.swift in Sources */,
-				B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */,
-				B3458D422906FFE200B97B35 /* WorldScreenViewModel.swift in Sources */,
-				B35F659929085D8C007C7161 /* Reward.swift in Sources */,
-				B35F659529085BD7007C7161 /* Storage.swift in Sources */,
-				B370A11F2907D5F5007D19AE /* ProfileScreenView.swift in Sources */,
-				B35F659C29087B6D007C7161 /* GameScreenView.swift in Sources */,
-				B3458D402906FFD700B97B35 /* WorldScreenView.swift in Sources */,
-				B35F659729085C06007C7161 /* AppData.swift in Sources */,
-				1F93554B290A980300092912 /* VoiceButtonView.swift in Sources */,
-				1F935549290A980300092912 /* BackgroundView.swift in Sources */,
-				B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */,
-				B39C51472907E490009F245F /* CoutryView.swift in Sources */,
-				B3458D4529070B3900B97B35 /* Country.swift in Sources */,
-				E9078259290947FE004B2BD4 /* Colors.swift in Sources */,
-				B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */,
-				1F93554E290A98A400092912 /* ContentView.swift in Sources */,
-				1F93554A290A980300092912 /* LaunchScreenView.swift in Sources */,
-				B3458D422906FFE200B97B35 /* WorldScreenViewModel.swift in Sources */,
-				B35F659929085D8C007C7161 /* Reward.swift in Sources */,
-				B35F659529085BD7007C7161 /* Storage.swift in Sources */,
-				1F93553D290A977400092912 /* MainTabBarView.swift in Sources */,
-				B370A11F2907D5F5007D19AE /* ProfileScreenView.swift in Sources */,
-				B35F659C29087B6D007C7161 /* GameScreenView.swift in Sources */,
-				B3458D402906FFD700B97B35 /* WorldScreenView.swift in Sources */,
-				B35F659729085C06007C7161 /* AppData.swift in Sources */,
+				B32EF07E290AB2A300D00B6B /* MainTabBarView.swift in Sources */,
+				B32EF07A290AB2A300D00B6B /* ContentView.swift in Sources */,
+				B32EF07D290AB2A300D00B6B /* Storage.swift in Sources */,
+				B32EF086290AB2A300D00B6B /* GameScreenView.swift in Sources */,
+				B32EF080290AB2A300D00B6B /* Colors.swift in Sources */,
+				B32EF088290AB2A700D00B6B /* LaunchScreenView.swift in Sources */,
+				B32EF085290AB2A300D00B6B /* Reward.swift in Sources */,
+				B32EF07C290AB2A300D00B6B /* WanderlustApp.swift in Sources */,
+				B32EF07F290AB2A300D00B6B /* Country.swift in Sources */,
+				B32EF081290AB2A300D00B6B /* ProfileScreenView.swift in Sources */,
+				B32EF083290AB2A300D00B6B /* WorldScreenViewModel.swift in Sources */,
+				B32EF087290AB2A700D00B6B /* BackgroundView.swift in Sources */,
+				B32EF084290AB2A300D00B6B /* CoutryView.swift in Sources */,
+				B32EF089290AB2A700D00B6B /* VoiceButtonView.swift in Sources */,
+				B32EF082290AB2A300D00B6B /* WorldScreenView.swift in Sources */,
+				B32EF07B290AB2A300D00B6B /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
