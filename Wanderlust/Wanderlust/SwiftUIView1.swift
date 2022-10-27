@@ -10,18 +10,31 @@ import SwiftUI
 struct SwiftUIView1: View {
     var body: some View {
         
-        HStack() {
-            
-            Image("Kid2")
-                .resizable()
-                .frame(width: 100, height: 100)
-                .clipShape(Circle())
-                .overlay {
-                    Circle().stroke(.orange, lineWidth: 4)
+        ZStack {
+    HStack() {
+                
+                Image("Kid2")
+                    .resizable()
+                    .frame(width: 100, height: 100)
+                    .clipShape(Circle())
+                    .overlay {
+                        Circle().stroke(.orange, lineWidth: 4)
+                        Image("Edit")
+                        .resizable()
+                        .frame(width: 88, height: 20)
+                        .offset(x:0, y:38
+                        )
+                        Text("Edit")
+                            .foregroundColor(.white)
+                            .offset(x:0, y:38
+                            )
+
+                }
+                    .padding()
+                Text("Miguel")
+                    .font(.system(size: 40)).bold()
+                    .foregroundColor(.black)
             }
-                .padding()
-            Text("Miguel")
-                .font(.system(size: 40)).bold()
         }
         
     

@@ -9,14 +9,16 @@ import Foundation
 import SwiftUI
 
 struct Rewardslistofyou: View {
-    
-    
-    
-    var body: some View{
-       
+    var body: some View {
         NavigationStack{
+            NavigationLink {
+                // AvatarView
+            } label: {
+                SwiftUIView1()
+                
+            }
             
-            SwiftUIView1()
+            
             List {
                 VStack(alignment: .leading) {
                     Text("Rewards")
@@ -95,11 +97,11 @@ struct Rewardslistofyou: View {
                         Image("Starg")
                             .resizable()
                             .frame(width: 30, height: 30)
-                      Spacer()
+                        Spacer()
                     }
                 }
             }
-           // .navigationTitle("Rewards")
+            // .navigationTitle("Rewards")
         }
     }
     
