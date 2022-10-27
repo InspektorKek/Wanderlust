@@ -24,7 +24,9 @@ extension Color {
     static let YellowCard = Color("YellowCard")
     static let WrongRed = Color("WrongRed")
     static let AccentColor = Color("AccentColor")
-
+    static let CircleOrange = Color("CircleOrange")
+    static let CirclePurple = Color("CirclePurple")
+    
 
 }
 
