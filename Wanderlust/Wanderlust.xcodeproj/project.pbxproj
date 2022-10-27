@@ -20,6 +20,7 @@
 		B37ECB1128FE912C007DA273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1028FE912C007DA273 /* Assets.xcassets */; };
 		B37ECB1528FE912C007DA273 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */; };
 		B39C51472907E490009F245F /* CoutryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C51462907E490009F245F /* CoutryView.swift */; };
+		E9078259290947FE004B2BD4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9078258290947FE004B2BD4 /* Colors.swift */; };
 		E9F455D128FEBC13009FA7B4 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wanderlust.entitlements; sourceTree = "<group>"; };
 		B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B39C51462907E490009F245F /* CoutryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoutryView.swift; sourceTree = "<group>"; };
+		E9078258290947FE004B2BD4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 				B37ECB1028FE912C007DA273 /* Assets.xcassets */,
 				B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */,
 				B37ECB1328FE912C007DA273 /* Preview Content */,
+				E9078258290947FE004B2BD4 /* Colors.swift */,
 			);
 			path = Wanderlust;
 			sourceTree = "<group>";
@@ -227,6 +230,8 @@
 			files = (
 				B39C51472907E490009F245F /* CoutryView.swift in Sources */,
 				B3458D4529070B3900B97B35 /* Country.swift in Sources */,
+				B37ECB0F28FE912A007DA273 /* ContentView.swift in Sources */,
+				E9078259290947FE004B2BD4 /* Colors.swift in Sources */,
 				B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */,
 				B3458D422906FFE200B97B35 /* WorldScreenViewModel.swift in Sources */,
 				B35F659929085D8C007C7161 /* Reward.swift in Sources */,
