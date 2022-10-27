@@ -8,25 +8,22 @@
 import SwiftUI
 
 extension Color {
-    static let salad = Color("salad")
-    static let WinColor = Color("WinColor")
-    static let LightBlue = Color("LightBlue")
-    static let GrayColor = Color("GrayColor")
-    static let BlueCard = Color("BlueCard")
-    static let ClearBlue = Color("ClearBlue")
-    static let DarkGray = Color("DarkGray")
-    static let DarkGreenCard = Color("DarkGreenCard")
-    static let GrayButton = Color("GrayButton")
-    static let LightGreenCard = Color("LightGreenCard")
-    static let OrangeCard = Color("OrangeCard")
-    static let PurpleCard = Color("PurpleCard")
-    static let Red = Color("Red")
-    static let YellowCard = Color("YellowCard")
-    static let WrongRed = Color("WrongRed")
-    static let AccentColor = Color("AccentColor")
-    static let CircleOrange = Color("CircleOrange")
-    static let CirclePurple = Color("CirclePurple")
-    
-
+    static let accentColor = Color("AccentColor")
+    static let salad = Color("Salad")
+    static let winColor = Color("WinColor")
+    static let lightBlue = Color("LightBlue")
+    static let grayColor = Color("GrayColor")
+    static let blueCard = Color("BlueCard")
+    static let clearBlue = Color("ClearBlue")
+    static let darkGray = Color("DarkGray")
+    static let darkGreenCard = Color("DarkGreenCard")
+    static let grayButton = Color("GrayButton")
+    static let lightGreenCard = Color("LightGreenCard")
+    static let orangeCard = Color("OrangeCard")
+    static let purpleCard = Color("PurpleCard")
+    static let red = Color("Red")
+    static let yellowCard = Color("YellowCard")
+    static let wrongRed = Color("WrongRed")
+    static let circleOrange = Color("CircleOrange")
+    static let circlePurple = Color("CirclePurple")
 }
-
