@@ -36,10 +36,10 @@ struct GameResults: View {
                 
                 
                 Button(action: {
-                    print("sone")
+                    presentationMode.wrappedValue.dismiss()
                 }
                        , label: {
-                    NavigationLink(destination: MainTabBarView()) { Text("Try Again!") }
+                    Text("Try Again!")
                 })
                 
                 .shadow(color: .gray, radius: 5, x: 7, y: 2)
@@ -61,33 +61,12 @@ struct GameResults: View {
                 .font(.system(size: 25, weight: .bold))
                 .foregroundColor(.red)
                 
-                }
+            }
             )
         }
     }
 }
-
-
-    
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
 struct GameResults_Previews: PreviewProvider {
     static var previews: some View {
         GameResults()

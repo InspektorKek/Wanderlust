@@ -21,26 +21,27 @@ struct GameScreenView: View {
                 Button("WIN") {
                     isWinPresented.toggle()
                 }
-                .fullScreenCover(isPresented: $isWinPresented, content: WinGameScreen.init)
+                .fullScreenCover(isPresented: $isWinPresented) {
+                    WinGameScreen(country: country)
+                }
                 
                 Button("LOSE") {
                     isLosePresented.toggle()
                 }
                 .fullScreenCover(isPresented: $isLosePresented, content: GameResults.init)
             }
-            Text("")
-                .navigationTitle(country.name.rawValue)
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            dismiss()
-                        } label: {
-                            Image(systemName: "xmark")
-                        }
+            .navigationTitle(country.name.rawValue)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "xmark")
                     }
                 }
-                .toolbarBackground(.visible, for: .navigationBar)
+            }
+            .toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }
