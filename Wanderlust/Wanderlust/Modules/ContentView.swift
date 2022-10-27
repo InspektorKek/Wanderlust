@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Wanderlust
 //
-//  Created by Valentina Tarantino on 26/10/22.
+//  Created by Valentina Tarantino on 27/10/22.
 //
 
 import SwiftUI
