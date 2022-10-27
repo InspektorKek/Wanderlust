@@ -55,52 +55,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3458D432906FFE600B97B35 /* WorldScreen */ = {
-			isa = PBXGroup;
-			children = (
-				B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */,
-				B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */,
-				B39C51482907E4C8009F245F /* View */,
-			);
-			path = WorldScreen;
-			sourceTree = "<group>";
-		};
-		B35F659A29085FBE007C7161 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				B35F659429085BD7007C7161 /* Storage.swift */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
-		B35F659F29096F5A007C7161 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				B35F659629085C06007C7161 /* AppData.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		B35F65A029096F75007C7161 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */,
-				B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */,
-				B35F659B29087B6D007C7161 /* GameScreenView.swift */,
-				B3458D432906FFE600B97B35 /* WorldScreen */,
-				B370A11D2907C612007D19AE /* MainTabBar */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		B370A11D2907C612007D19AE /* MainTabBar */ = {
-			isa = PBXGroup;
-			children = (
-				B33C317529068C3F00F5559B /* MainTabBarView.swift */,
-			);
-			path = MainTabBar;
-			sourceTree = "<group>";
-		};
 		B37ECB0028FE912A007DA273 = {
 			isa = PBXGroup;
 			children = (
@@ -121,14 +75,21 @@
 			isa = PBXGroup;
 			children = (
 				B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */,
-				B35F65A029096F75007C7161 /* Modules */,
-				B39C51492907E4DC009F245F /* Models */,
-				B35F659F29096F5A007C7161 /* Services */,
-				B35F659A29085FBE007C7161 /* Utility */,
+				E9F455D028FEBC13009FA7B4 /* LaunchScreen.swift */,
+				B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */,
+				B35F659B29087B6D007C7161 /* GameScreenView.swift */,
+				B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */,
+				B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */,
+				B39C51462907E490009F245F /* CoutryView.swift */,
+				B33C317529068C3F00F5559B /* MainTabBarView.swift */,
+				B3458D4429070B3900B97B35 /* Country.swift */,
+				B35F659829085D8C007C7161 /* Reward.swift */,
+				B35F659629085C06007C7161 /* AppData.swift */,
+				B35F659429085BD7007C7161 /* Storage.swift */,
+				E9078258290947FE004B2BD4 /* Colors.swift */,
 				B37ECB1028FE912C007DA273 /* Assets.xcassets */,
 				B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */,
 				B37ECB1328FE912C007DA273 /* Preview Content */,
-				E9078258290947FE004B2BD4 /* Colors.swift */,
 			);
 			path = Wanderlust;
 			sourceTree = "<group>";
@@ -139,23 +100,6 @@
 				B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B39C51482907E4C8009F245F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B39C51462907E490009F245F /* CoutryView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B39C51492907E4DC009F245F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B3458D4429070B3900B97B35 /* Country.swift */,
-				B35F659829085D8C007C7161 /* Reward.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +174,6 @@
 			files = (
 				B39C51472907E490009F245F /* CoutryView.swift in Sources */,
 				B3458D4529070B3900B97B35 /* Country.swift in Sources */,
-				B37ECB0F28FE912A007DA273 /* ContentView.swift in Sources */,
 				E9078259290947FE004B2BD4 /* Colors.swift in Sources */,
 				B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */,
 				B3458D422906FFE200B97B35 /* WorldScreenViewModel.swift in Sources */,
