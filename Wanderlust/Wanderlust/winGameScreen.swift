@@ -14,14 +14,13 @@ struct WinGameScreen: View {
                 Spacer()
                 
                 Text("Amazing job!")
-                    .font(.system(size: 45, weight: .bold))
                     .foregroundColor(.accentColor)
-                
+                    .font(.system(size: 45, weight: .bold))
                 Spacer()
                 
                 Text("You conquered Mexico")
-                    .font(.system(size: 25))
                     .foregroundColor(.black)
+                    .font(.system(size: 25))
                 
                 Spacer()
                 
@@ -30,18 +29,19 @@ struct WinGameScreen: View {
                         .resizable()
                         .foregroundColor(.yellow)
                         .frame(width: 290, height: 290)
-                    
-                    Image("mexicoFlag")
-                        .resizable()
-                        .frame(width: 150, height: 150)
-                        .offset(y: -60)
-                    
+                        .overlay(alignment: .top) {
+                            
+                            Image("mexicoFlag")
+                                .resizable()
+                                .frame(width: 150, height: 150)
+                            
+                        }
                 }
-                
+                        
                 Text("Mexican Explorer 🏅")
-                    .font(.system(size: 25))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.accentColor)
+                    .font(.system(size: 25))
                     .bold()
                 
                 

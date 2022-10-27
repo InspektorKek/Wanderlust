@@ -86,7 +86,7 @@ struct GameResults: View {
     
     
     
-struct gameResults_Previews: PreviewProvider {
+struct GameResults_Previews: PreviewProvider {
     static var previews: some View {
         GameResults()
     }

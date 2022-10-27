@@ -20,9 +20,9 @@
 		B37ECB1528FE912C007DA273 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */; };
 		B39C51472907E490009F245F /* CoutryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C51462907E490009F245F /* CoutryView.swift */; };
 		E9078259290947FE004B2BD4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9078258290947FE004B2BD4 /* Colors.swift */; };
-		E9240B1229040E9900FD4926 /* GameResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9240B1129040E9900FD4926 /* GameResults.swift */; };
 		E9240B182904220100FD4926 /* WinGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9240B172904220100FD4926 /* WinGameScreen.swift */; };
 		E933BDBF2906A075004228CB /* HalfASheet in Frameworks */ = {isa = PBXBuildFile; productRef = E933BDBE2906A075004228CB /* HalfASheet */; };
+		E9882846290A9CC900B9D405 /* GameResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9240B1129040E9900FD4926 /* GameResults.swift */; };
 		E9CA3836290A92D4009E62BC /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CA3835290A92D4009E62BC /* MainTabBarView.swift */; };
 		E9CA3838290A92F1009E62BC /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CA3837290A92F1009E62BC /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
@@ -242,7 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9240B1229040E9900FD4926 /* GameResults.swift in Sources */,
 				B39C51472907E490009F245F /* CoutryView.swift in Sources */,
 				B3458D4529070B3900B97B35 /* Country.swift in Sources */,
 				E9078259290947FE004B2BD4 /* Colors.swift in Sources */,
@@ -252,6 +251,7 @@
 				E9CA3838290A92F1009E62BC /* LaunchScreen.swift in Sources */,
 				B35F659529085BD7007C7161 /* Storage.swift in Sources */,
 				B370A11F2907D5F5007D19AE /* ProfileScreenView.swift in Sources */,
+				E9882846290A9CC900B9D405 /* GameResults.swift in Sources */,
 				B35F659C29087B6D007C7161 /* GameScreenView.swift in Sources */,
 				E9CA3836290A92D4009E62BC /* MainTabBarView.swift in Sources */,
 				B3458D402906FFD700B97B35 /* WorldScreenView.swift in Sources */,
