@@ -10,19 +10,20 @@ import SwiftUI
 
 struct Rewardslistofyou: View {
     var body: some View {
-        NavigationStack{
+        NavigationStack {
             NavigationLink {
                 // AvatarView
             } label: {
                 SwiftUIView1()
-                
+                    Spacer()
             }
             
-            
-            List {
+            List() {
+                
                 VStack(alignment: .leading) {
                     Text("Rewards")
                         .font(.system(size: 40).bold())
+                        Divider()
                     HStack {
                         Image(systemName: "rewards")
                             .foregroundColor(.black)
@@ -31,18 +32,18 @@ struct Rewardslistofyou: View {
                             .frame(width: 63, height: 63)
                             .clipShape(Circle())
                             .overlay {
-                                Circle().stroke(.orange, lineWidth: 4)
+                                Circle().stroke(.gray, lineWidth: 4)
                             }
                             .bold()
-                        Text("Mexican Explorer")
+                        Text("Mexico Explorer")
                             .foregroundColor(.black)
-                        Image("Star")
+                        Image("Starg")
                             .resizable()
                             .frame(width: 30, height: 30)
                         Spacer()
                         
                     }
-                    
+                    .navigationTitle("Profile")
                     HStack {
                         Image(systemName: "rewards")
                             .foregroundColor(.black)
@@ -92,7 +93,7 @@ struct Rewardslistofyou: View {
                                 Circle().stroke(.gray, lineWidth: 4)
                             }
                             .bold()
-                        Text("Russian Explorer")
+                        Text("Russia Explorer")
                             .foregroundColor(.black)
                         Image("Starg")
                             .resizable()
@@ -101,6 +102,7 @@ struct Rewardslistofyou: View {
                     }
                 }
             }
+            .listStyle(PlainListStyle())
             // .navigationTitle("Rewards")
         }
     }
