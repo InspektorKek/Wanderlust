@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F9355322909437E00092912 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9355312909437E00092912 /* BackgroundView.swift */; };
-		1F935536290944EF00092912 /* VoiceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935535290944EF00092912 /* VoiceButtonView.swift */; };
 		1F93553829094B6400092912 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93553729094B6400092912 /* ContentView.swift */; };
-		B33C317629068C3F00F5559B /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33C317529068C3F00F5559B /* MainTabBarView.swift */; };
+		1F93553D290A977400092912 /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93553C290A977400092912 /* MainTabBarView.swift */; };
+		1F935549290A980300092912 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935546290A980300092912 /* BackgroundView.swift */; };
+		1F93554A290A980300092912 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935547290A980300092912 /* LaunchScreenView.swift */; };
+		1F93554B290A980300092912 /* VoiceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935548290A980300092912 /* VoiceButtonView.swift */; };
 		B3458D402906FFD700B97B35 /* WorldScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */; };
 		B3458D422906FFE200B97B35 /* WorldScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */; };
 		B3458D4529070B3900B97B35 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D4429070B3900B97B35 /* Country.swift */; };
@@ -20,7 +21,6 @@
 		B35F659C29087B6D007C7161 /* GameScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659B29087B6D007C7161 /* GameScreenView.swift */; };
 		B370A11F2907D5F5007D19AE /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */; };
 		B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */; };
-		B37ECB0F28FE912A007DA273 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37ECB0E28FE912A007DA273 /* LaunchScreenView.swift */; };
 		B37ECB1128FE912C007DA273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1028FE912C007DA273 /* Assets.xcassets */; };
 		B37ECB1528FE912C007DA273 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */; };
 		B39C51472907E490009F245F /* CoutryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C51462907E490009F245F /* CoutryView.swift */; };
@@ -28,10 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F9355312909437E00092912 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
-		1F935535290944EF00092912 /* VoiceButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceButtonView.swift; sourceTree = "<group>"; };
 		1F93553729094B6400092912 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B33C317529068C3F00F5559B /* MainTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		1F93553C290A977400092912 /* MainTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
+		1F935546290A980300092912 /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		1F935547290A980300092912 /* LaunchScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		1F935548290A980300092912 /* VoiceButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceButtonView.swift; sourceTree = "<group>"; };
 		B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldScreenView.swift; sourceTree = "<group>"; };
 		B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldScreenViewModel.swift; sourceTree = "<group>"; };
 		B3458D4429070B3900B97B35 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenView.swift; sourceTree = "<group>"; };
 		B37ECB0928FE912A007DA273 /* Wanderlust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wanderlust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderlustApp.swift; sourceTree = "<group>"; };
-		B37ECB0E28FE912A007DA273 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		B37ECB1028FE912C007DA273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wanderlust.entitlements; sourceTree = "<group>"; };
 		B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -61,12 +61,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F93553929094B7600092912 /* LaunchScreen */ = {
+		1F93554C290A980900092912 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
-				B37ECB0E28FE912A007DA273 /* LaunchScreenView.swift */,
-				1F935535290944EF00092912 /* VoiceButtonView.swift */,
-				1F9355312909437E00092912 /* BackgroundView.swift */,
+				1F935546290A980300092912 /* BackgroundView.swift */,
+				1F935547290A980300092912 /* LaunchScreenView.swift */,
+				1F935548290A980300092912 /* VoiceButtonView.swift */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
@@ -100,10 +100,10 @@
 				B35F659829085D8C007C7161 /* Reward.swift */,
 				B35F659629085C06007C7161 /* AppData.swift */,
 				B35F659429085BD7007C7161 /* Storage.swift */,
-				E9078258290947FE004B2BD4 /* Colors.swift */,
 				1F93553729094B6400092912 /* ContentView.swift */,
-				1F93553929094B7600092912 /* LaunchScreen */,
-				B33C317529068C3F00F5559B /* MainTabBarView.swift */,
+				1F93553C290A977400092912 /* MainTabBarView.swift */,
+				E9078258290947FE004B2BD4 /* Colors.swift */,
+				1F93554C290A980900092912 /* LaunchScreen */,
 				B37ECB1028FE912C007DA273 /* Assets.xcassets */,
 				B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */,
 				B37ECB1328FE912C007DA273 /* Preview Content */,
@@ -199,14 +199,24 @@
 				B370A11F2907D5F5007D19AE /* ProfileScreenView.swift in Sources */,
 				B35F659C29087B6D007C7161 /* GameScreenView.swift in Sources */,
 				B3458D402906FFD700B97B35 /* WorldScreenView.swift in Sources */,
-				B33C317629068C3F00F5559B /* MainTabBarView.swift in Sources */,
 				B35F659729085C06007C7161 /* AppData.swift in Sources */,
-				B37ECB0F28FE912A007DA273 /* LaunchScreenView.swift in Sources */,
+				1F93554B290A980300092912 /* VoiceButtonView.swift in Sources */,
+				1F935549290A980300092912 /* BackgroundView.swift in Sources */,
 				1F93553829094B6400092912 /* ContentView.swift in Sources */,
 				B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */,
-				1F935536290944EF00092912 /* VoiceButtonView.swift in Sources */,
-				B33C317629068C3F00F5559B /* MainTabBarView.swift in Sources */,
-				1F9355322909437E00092912 /* BackgroundView.swift in Sources */,
+				B39C51472907E490009F245F /* CoutryView.swift in Sources */,
+				B3458D4529070B3900B97B35 /* Country.swift in Sources */,
+				E9078259290947FE004B2BD4 /* Colors.swift in Sources */,
+				B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */,
+				1F93554A290A980300092912 /* LaunchScreenView.swift in Sources */,
+				B3458D422906FFE200B97B35 /* WorldScreenViewModel.swift in Sources */,
+				B35F659929085D8C007C7161 /* Reward.swift in Sources */,
+				B35F659529085BD7007C7161 /* Storage.swift in Sources */,
+				1F93553D290A977400092912 /* MainTabBarView.swift in Sources */,
+				B370A11F2907D5F5007D19AE /* ProfileScreenView.swift in Sources */,
+				B35F659C29087B6D007C7161 /* GameScreenView.swift in Sources */,
+				B3458D402906FFD700B97B35 /* WorldScreenView.swift in Sources */,
+				B35F659729085C06007C7161 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
