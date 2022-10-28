@@ -17,6 +17,9 @@ struct AppData {
     
     @Storage(key: "rewards", defaultValue: defaultRewards)
     static var rewards: [Reward]
+    
+    @Storage(key: "user_selected_avatar_index", defaultValue: nil)
+    static var userSelectedAvatarImageName: String?
 }
 
 private extension AppData {
