@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct WinGameScreen: View {
+    @Environment(\.presentationMode) var presentationMode
+    
+    var country: Country
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -19,7 +23,7 @@ struct WinGameScreen: View {
                 
                 Spacer()
                 
-                Text("You conquered Mexico")
+                Text("You conquered \(country.name.rawValue)")
                     .foregroundColor(.black)
                     .font(.system(size: 25))
                 
@@ -38,7 +42,7 @@ struct WinGameScreen: View {
                             
                         }
                 }
-                        
+                
                 Text("Mexican Explorer 🏅")
                     .multilineTextAlignment(.center)
                     .foregroundColor(.accentColor)
@@ -53,17 +57,17 @@ struct WinGameScreen: View {
                     .foregroundColor(.black)
                 
                 
-               Button(action: {
-                   print("sone")
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
                 }
-                , label: {
-                NavigationLink(destination: MainTabBarView()) { Text("Got to the Map") }
+                       , label: {
+                    Text("Got to the Map")
                 })
-                     .shadow(color: .gray, radius: 5, x: 7, y: 2)
-                     .buttonStyle(.borderedProminent)
-                     .font(.system(size: 25, weight: .bold))
-                     .foregroundColor(.white)
-                     .controlSize(.large)
+                .shadow(color: .gray, radius: 5, x: 7, y: 2)
+                .buttonStyle(.borderedProminent)
+                .font(.system(size: 25, weight: .bold))
+                .foregroundColor(.white)
+                .controlSize(.large)
                 
             }
             .padding(.vertical)
@@ -71,63 +75,8 @@ struct WinGameScreen: View {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 struct WinGameScreen_Previews: PreviewProvider {
     static var previews: some View {
-        WinGameScreen()
+        WinGameScreen(country: Country(name: .mexico, isAvailable: true))
     }
 }
