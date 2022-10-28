@@ -20,7 +20,13 @@ struct LaunchScreenView: View {
                         .font(.system(size: 45))
                         .padding(.vertical)
                     Spacer()
-                    NavigationLink(destination: MainTabBarView()) {
+                    NavigationLink(destination: {
+                        //if let _ = AppData.userSelectedAvatarImageName {
+                            MainTabBarView()
+                        //} else {
+                            //AvatarScreenView()
+                        //}
+                    }) {
                         Text("Play")
                             .padding()
                             .padding(.horizontal, 30)
@@ -34,7 +40,6 @@ struct LaunchScreenView: View {
                 .padding(.all)
             }
         }
-        
     }
 }
 
