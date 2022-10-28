@@ -21,16 +21,13 @@ struct LaunchScreenView: View {
                         .padding(.vertical)
                     Spacer()
                     NavigationLink(destination: {
-                        //if let _ = AppData.userSelectedAvatarImageName {
-                            MainTabBarView()
-                        //} else {
-                            //AvatarScreenView()
-                        //}
+                        MainTabBarView()
                     }) {
                         Text("Play")
                             .padding()
                             .padding(.horizontal, 30)
-                            .font(.body)
+                            .font(.title)
+                            .fontWeight(.bold)
                             .foregroundColor(Color.white)
                             .background(Color.orange.cornerRadius(10))
                             .buttonBorderShape(.roundedRectangle(radius: 12))

@@ -12,9 +12,7 @@ struct OvalTextFieldStyle: TextFieldStyle {
         configuration
             .padding()
             .background(Color.gray.opacity(0.2))
-        
             .cornerRadius(20)
-            .shadow(color: .gray, radius: 10)
             .padding(.horizontal)
     }
 }
@@ -27,10 +25,11 @@ struct Avatar: Identifiable {
 }
 
 struct AvatarScreenView: View {
-    @State private var imageName = "icon_kid_1"
-    @State private var avatarName: String = "Type your name..."
+    @Environment(\.presentationMode) var presentationMode
+    
+    @State private var lastSelectedImageName: String = AppData.userSelectedAvatarImageName
+    @State private var avatarName: String = ""
     @State private var didTap: Bool = false
-    @State private var lastSelectedIndex: Int?
     
     @State var arrayOfAvatars: [Avatar] = [
         Avatar(imageName: "icon_kid_1", isSelected: true),
@@ -41,86 +40,59 @@ struct AvatarScreenView: View {
     
     var body: some View {
         NavigationView {
-            VStack{
-                
-                
-                Profileimage(imagename: imageName)
-                TextField("", text: $avatarName)
+            VStack(spacing: 36) {
+                Spacer()
+                Image(lastSelectedImageName)
+                    .resizable()
+                    .scaledToFit()
+                TextField("Your name...", text: $avatarName)
                     .foregroundColor(.black)
                     .textFieldStyle(OvalTextFieldStyle())
-                
-                
-                HStack(spacing:20){
+                HStack(spacing: 16) {
                     ForEach(arrayOfAvatars.indices, id: \.self) { index in
                         Button(action: {
-                            arrayOfAvatars[lastSelectedIndex!].isSelected.toggle()
-                            self.imageName = arrayOfAvatars[index].imageName
+                            if let index = arrayOfAvatars.firstIndex(where: { $0.imageName == lastSelectedImageName }) {
+                                arrayOfAvatars[index].isSelected.toggle()
+                            }
+                            lastSelectedImageName = arrayOfAvatars[index].imageName
                             arrayOfAvatars[index].isSelected.toggle()
-                            lastSelectedIndex = index
                         }){
                             let entity = arrayOfAvatars[index]
                             Image(entity.imageName)
                                 .resizable()
-                                .frame(width: 33, height: 88)
+                                .frame(width: 43, height: 100)
                                 .padding()
-                                .border(entity.isSelected ?  .gray : .orange, width: 4)
-                                .background( entity.isSelected ?  .gray.opacity(0.2) : .orange.opacity(0.2))
+                                .border(entity.isSelected ? .orange : .gray, width: 4)
+                                .background(entity.isSelected ? .orange.opacity(0.2) : .gray.opacity(0.2))
                         }
                     }
                 }
-                
-                .padding(35)
-                
+                Spacer()
                 Button(action: {
-                    AppData.userSelectedAvatarImageName = imageName
+                    AppData.userSelectedAvatarImageName = lastSelectedImageName
+                    AppData.userName = avatarName
+                    presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Text("Save")
                         .padding()
-                        .padding(.horizontal, 90)
-                        .font(.body)
+                        .padding(.horizontal, 30)
+                        .font(.title)
+                        .fontWeight(.bold)
                         .foregroundColor(Color.white)
                         .background(Color.orange.cornerRadius(10))
                         .buttonBorderShape(.roundedRectangle(radius: 12))
                         .fontWeight(.medium)
-                        .shadow(radius: 5)
-                    
                 })
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        Text("Avatar")
-                            .font(.largeTitle.bold())
-                            .accessibilityAddTraits(.isHeader)
-                    }
-                }
-                
             }
+            .navigationTitle("Avatar")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(.visible, for: .navigationBar)
         }
-        .onAppear {
-            if let index = arrayOfAvatars.firstIndex(where: { $0.imageName == AppData.userSelectedAvatarImageName ?? arrayOfAvatars.first!.imageName }) {
-                lastSelectedIndex = index
-            }
-        }
-    }
-    
-    struct AvatarScreenView_Previews: PreviewProvider {
-        static var previews: some View {
-            AvatarScreenView()
-        }
-    }
-    
-}
-struct Profileimage: View {
-    var imagename: String
-    
-    var body: some View {
-        Image(imagename)
-            .foregroundColor(.white)
-            .padding(.vertical, 34)
-            .padding(.horizontal, 40)
-            .border(.orange, width: 6)
-            .background(Color.orange.opacity(0.2))
-            .position(x:45, y:10)
-            .padding(150)
     }
 }
 
+struct AvatarScreenView_Previews: PreviewProvider {
+    static var previews: some View {
+        AvatarScreenView()
+    }
+}

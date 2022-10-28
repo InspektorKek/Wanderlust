@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainTabBarView: View {
     @StateObject var viewModel = WorldScreenViewModel()
+    @State private var isAvatarSelectorPresented = false
     
     var body: some View {
         TabView {
@@ -24,7 +25,17 @@ struct MainTabBarView: View {
                     Label("Profile", systemImage: "person.crop.circle.fill")
                 }
         }
+        .navigationBarBackButtonHidden(true)
         .tint(.accentColor)
+        .sheet(isPresented: $isAvatarSelectorPresented) {
+            AvatarScreenView()
+        }
+        .onAppear {
+            if !AppData.isAvatarScreenShown {
+                isAvatarSelectorPresented.toggle()
+                AppData.isAvatarScreenShown = true
+            }
+        }
     }
 }
 
