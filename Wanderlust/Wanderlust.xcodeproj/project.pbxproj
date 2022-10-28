@@ -24,6 +24,7 @@
 		B32EF087290AB2A700D00B6B /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935546290A980300092912 /* BackgroundView.swift */; };
 		B32EF088290AB2A700D00B6B /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935547290A980300092912 /* LaunchScreenView.swift */; };
 		B32EF089290AB2A700D00B6B /* VoiceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935548290A980300092912 /* VoiceButtonView.swift */; };
+		B32EF091290ABF5F00D00B6B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32EF090290ABF5F00D00B6B /* Launch Screen.storyboard */; };
 		B37ECB1128FE912C007DA273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1028FE912C007DA273 /* Assets.xcassets */; };
 		B37ECB1528FE912C007DA273 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		1F935547290A980300092912 /* LaunchScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		1F935548290A980300092912 /* VoiceButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceButtonView.swift; sourceTree = "<group>"; };
 		1F93554D290A98A400092912 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B32EF090290ABF5F00D00B6B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldScreenView.swift; sourceTree = "<group>"; };
 		B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldScreenViewModel.swift; sourceTree = "<group>"; };
 		B3458D4429070B3900B97B35 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				B37ECB1028FE912C007DA273 /* Assets.xcassets */,
 				B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */,
 				B37ECB1328FE912C007DA273 /* Preview Content */,
+				B32EF090290ABF5F00D00B6B /* Launch Screen.storyboard */,
 			);
 			path = Wanderlust;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32EF091290ABF5F00D00B6B /* Launch Screen.storyboard in Resources */,
 				B37ECB1528FE912C007DA273 /* Preview Assets.xcassets in Resources */,
 				B37ECB1128FE912C007DA273 /* Assets.xcassets in Resources */,
 			);
@@ -344,6 +348,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -386,6 +391,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
