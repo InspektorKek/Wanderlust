@@ -11,7 +11,6 @@
 		0081CCAB290BCE0200475C56 /* StoryThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081CCA6290BCE0200475C56 /* StoryThree.swift */; };
 		0081CCAC290BCE0200475C56 /* StoryOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081CCA7290BCE0200475C56 /* StoryOne.swift */; };
 		0081CCAD290BCE0200475C56 /* StoryTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081CCA8290BCE0200475C56 /* StoryTwo.swift */; };
-		0081CCAE290BCE0200475C56 /* ButtonContinue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081CCA9290BCE0200475C56 /* ButtonContinue.swift */; };
 		0081CCAF290BCE0200475C56 /* Playthegame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081CCAA290BCE0200475C56 /* Playthegame.swift */; };
 		B32EF07A290AB2A300D00B6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93554D290A98A400092912 /* ContentView.swift */; };
 		B32EF07B290AB2A300D00B6B /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659629085C06007C7161 /* AppData.swift */; };
@@ -38,7 +37,6 @@
 		0081CCA6290BCE0200475C56 /* StoryThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryThree.swift; sourceTree = "<group>"; };
 		0081CCA7290BCE0200475C56 /* StoryOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryOne.swift; sourceTree = "<group>"; };
 		0081CCA8290BCE0200475C56 /* StoryTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTwo.swift; sourceTree = "<group>"; };
-		0081CCA9290BCE0200475C56 /* ButtonContinue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonContinue.swift; sourceTree = "<group>"; };
 		0081CCAA290BCE0200475C56 /* Playthegame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playthegame.swift; sourceTree = "<group>"; };
 		1F93553C290A977400092912 /* MainTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		1F935546290A980300092912 /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				0081CCA3290BCDD500475C56 /* Storyboard.swift */,
-				0081CCA9290BCE0200475C56 /* ButtonContinue.swift */,
 				0081CCAA290BCE0200475C56 /* Playthegame.swift */,
 				0081CCA7290BCE0200475C56 /* StoryOne.swift */,
 				0081CCA6290BCE0200475C56 /* StoryThree.swift */,
@@ -224,7 +221,6 @@
 				B32EF080290AB2A300D00B6B /* Colors.swift in Sources */,
 				B32EF088290AB2A700D00B6B /* LaunchScreenView.swift in Sources */,
 				B32EF085290AB2A300D00B6B /* Reward.swift in Sources */,
-				0081CCAE290BCE0200475C56 /* ButtonContinue.swift in Sources */,
 				B32EF07C290AB2A300D00B6B /* WanderlustApp.swift in Sources */,
 				0081CCAF290BCE0200475C56 /* Playthegame.swift in Sources */,
 				B32EF07F290AB2A300D00B6B /* Country.swift in Sources */,
