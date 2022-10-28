@@ -32,12 +32,12 @@ struct Rewardslistofyou: View {
                             .frame(width: 63, height: 63)
                             .clipShape(Circle())
                             .overlay {
-                                Circle().stroke(.gray, lineWidth: 4)
+                                Circle().stroke(.orange, lineWidth: 4)
                             }
                             .bold()
                         Text("Mexico Explorer")
                             .foregroundColor(.black)
-                        Image("Starg")
+                        Image("Star")
                             .resizable()
                             .frame(width: 30, height: 30)
                         Spacer()

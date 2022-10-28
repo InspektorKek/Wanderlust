@@ -21,7 +21,7 @@ struct SwiftUIView1: View {
                         Circle().stroke(.orange, lineWidth: 4)
                         Image("Edit")
                         .resizable()
-                        .frame(width: 88, height: 20)
+                        .frame(width: 80, height: 20)
                         .offset(x:0, y:38
                         )
                         Text("Edit")
