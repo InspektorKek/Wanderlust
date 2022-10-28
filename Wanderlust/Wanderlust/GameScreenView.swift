@@ -10,23 +10,38 @@ import SwiftUI
 struct GameScreenView: View {
     @Environment(\.dismiss) var dismiss
     
+    @State private var isLosePresented = false
+    @State private var isWinPresented = false
+    
     var country: Country
     
     var body: some View {
         NavigationView {
-            Text("")
-                .navigationTitle(country.name.rawValue)
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            dismiss()
-                        } label: {
-                            Image(systemName: "xmark")
-                        }
+            VStack {
+                Button("WIN") {
+                    isWinPresented.toggle()
+                }
+                .fullScreenCover(isPresented: $isWinPresented) {
+                    WinGameScreen(country: country)
+                }
+                
+                Button("LOSE") {
+                    isLosePresented.toggle()
+                }
+                .fullScreenCover(isPresented: $isLosePresented, content: GameResults.init)
+            }
+            .navigationTitle(country.name.rawValue)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "xmark")
                     }
                 }
-                .toolbarBackground(.visible, for: .navigationBar)
+            }
+            .toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }

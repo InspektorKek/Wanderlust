@@ -24,6 +24,9 @@
 		B32EF087290AB2A700D00B6B /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935546290A980300092912 /* BackgroundView.swift */; };
 		B32EF088290AB2A700D00B6B /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935547290A980300092912 /* LaunchScreenView.swift */; };
 		B32EF089290AB2A700D00B6B /* VoiceButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F935548290A980300092912 /* VoiceButtonView.swift */; };
+		B32EF08A290AB5C300D00B6B /* HalfASheet in Frameworks */ = {isa = PBXBuildFile; productRef = E933BDBE2906A075004228CB /* HalfASheet */; };
+		B32EF08D290AB66B00D00B6B /* WinGameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32EF08B290AB66B00D00B6B /* WinGameScreen.swift */; };
+		B32EF08F290AB90600D00B6B /* GameResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32EF08C290AB66B00D00B6B /* GameResults.swift */; };
 		B32EF091290ABF5F00D00B6B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32EF090290ABF5F00D00B6B /* Launch Screen.storyboard */; };
 		B37ECB1128FE912C007DA273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1028FE912C007DA273 /* Assets.xcassets */; };
 		B37ECB1528FE912C007DA273 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */; };
@@ -36,6 +39,8 @@
 		1F935547290A980300092912 /* LaunchScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		1F935548290A980300092912 /* VoiceButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceButtonView.swift; sourceTree = "<group>"; };
 		1F93554D290A98A400092912 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B32EF08B290AB66B00D00B6B /* WinGameScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinGameScreen.swift; sourceTree = "<group>"; };
+		B32EF08C290AB66B00D00B6B /* GameResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameResults.swift; sourceTree = "<group>"; };
 		B32EF090290ABF5F00D00B6B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldScreenView.swift; sourceTree = "<group>"; };
 		B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldScreenViewModel.swift; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32EF08A290AB5C300D00B6B /* HalfASheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +100,8 @@
 		B37ECB0B28FE912A007DA273 /* Wanderlust */ = {
 			isa = PBXGroup;
 			children = (
+				B32EF08C290AB66B00D00B6B /* GameResults.swift */,
+				B32EF08B290AB66B00D00B6B /* WinGameScreen.swift */,
 				B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */,
 				1F93554D290A98A400092912 /* ContentView.swift */,
 				B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */,
@@ -141,6 +149,9 @@
 			dependencies = (
 			);
 			name = Wanderlust;
+			packageProductDependencies = (
+				E933BDBE2906A075004228CB /* HalfASheet */,
+			);
 			productName = Wanderlust;
 			productReference = B37ECB0928FE912A007DA273 /* Wanderlust.app */;
 			productType = "com.apple.product-type.application";
@@ -169,6 +180,9 @@
 				Base,
 			);
 			mainGroup = B37ECB0028FE912A007DA273;
+			packageReferences = (
+				E933BDBD2906A075004228CB /* XCRemoteSwiftPackageReference "HalfASheet" */,
+			);
 			productRefGroup = B37ECB0A28FE912A007DA273 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -196,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32EF08F290AB90600D00B6B /* GameResults.swift in Sources */,
 				B32EF07E290AB2A300D00B6B /* MainTabBarView.swift in Sources */,
 				B32EF07A290AB2A300D00B6B /* ContentView.swift in Sources */,
 				B32EF07D290AB2A300D00B6B /* Storage.swift in Sources */,
@@ -203,6 +218,7 @@
 				B32EF080290AB2A300D00B6B /* Colors.swift in Sources */,
 				B32EF088290AB2A700D00B6B /* LaunchScreenView.swift in Sources */,
 				B32EF085290AB2A300D00B6B /* Reward.swift in Sources */,
+				B32EF08D290AB66B00D00B6B /* WinGameScreen.swift in Sources */,
 				B32EF07C290AB2A300D00B6B /* WanderlustApp.swift in Sources */,
 				1F35A106290BDFCB00B01C8C /* AvatarSelectorView.swift in Sources */,
 				B32EF07F290AB2A300D00B6B /* Country.swift in Sources */,
@@ -436,6 +452,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E933BDBD2906A075004228CB /* XCRemoteSwiftPackageReference "HalfASheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/franklynw/HalfASheet";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E933BDBE2906A075004228CB /* HalfASheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E933BDBD2906A075004228CB /* XCRemoteSwiftPackageReference "HalfASheet" */;
+			productName = HalfASheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B37ECB0128FE912A007DA273 /* Project object */;
 }
