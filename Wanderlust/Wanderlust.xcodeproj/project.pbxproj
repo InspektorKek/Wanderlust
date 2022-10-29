@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1F35A106290BDFCB00B01C8C /* AvatarSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35A105290BDFCB00B01C8C /* AvatarSelectorView.swift */; };
+		0081CCA4290BCDD500475C56 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081CCA3290BCDD500475C56 /* Storyboard.swift */; };
+		0081CCAB290BCE0200475C56 /* StoryThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081CCA6290BCE0200475C56 /* StoryThree.swift */; };
+		0081CCAC290BCE0200475C56 /* StoryOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081CCA7290BCE0200475C56 /* StoryOne.swift */; };
+		0081CCAD290BCE0200475C56 /* StoryTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081CCA8290BCE0200475C56 /* StoryTwo.swift */; };
+		0081CCAF290BCE0200475C56 /* Playthegame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0081CCAA290BCE0200475C56 /* Playthegame.swift */; };
 		B32EF07A290AB2A300D00B6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93554D290A98A400092912 /* ContentView.swift */; };
 		B32EF07B290AB2A300D00B6B /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35F659629085C06007C7161 /* AppData.swift */; };
 		B32EF07C290AB2A300D00B6B /* WanderlustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */; };
@@ -34,6 +39,11 @@
 
 /* Begin PBXFileReference section */
 		1F35A105290BDFCB00B01C8C /* AvatarSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSelectorView.swift; sourceTree = "<group>"; };
+		0081CCA3290BCDD500475C56 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		0081CCA6290BCE0200475C56 /* StoryThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryThree.swift; sourceTree = "<group>"; };
+		0081CCA7290BCE0200475C56 /* StoryOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryOne.swift; sourceTree = "<group>"; };
+		0081CCA8290BCE0200475C56 /* StoryTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTwo.swift; sourceTree = "<group>"; };
+		0081CCAA290BCE0200475C56 /* Playthegame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Playthegame.swift; sourceTree = "<group>"; };
 		1F93553C290A977400092912 /* MainTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarView.swift; sourceTree = "<group>"; };
 		1F935546290A980300092912 /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		1F935547290A980300092912 /* LaunchScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
@@ -71,6 +81,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0081CCA5290BCDDE00475C56 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				0081CCA3290BCDD500475C56 /* Storyboard.swift */,
+				0081CCAA290BCE0200475C56 /* Playthegame.swift */,
+				0081CCA7290BCE0200475C56 /* StoryOne.swift */,
+				0081CCA6290BCE0200475C56 /* StoryThree.swift */,
+				0081CCA8290BCE0200475C56 /* StoryTwo.swift */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
 		1F93554C290A980900092912 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +138,7 @@
 				1F93553C290A977400092912 /* MainTabBarView.swift */,
 				E9078258290947FE004B2BD4 /* Colors.swift */,
 				1F35A105290BDFCB00B01C8C /* AvatarSelectorView.swift */,
+				0081CCA5290BCDDE00475C56 /* Story */,
 				1F93554C290A980900092912 /* LaunchScreen */,
 				B37ECB1028FE912C007DA273 /* Assets.xcassets */,
 				B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */,
@@ -211,9 +234,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B32EF08F290AB90600D00B6B /* GameResults.swift in Sources */,
+				0081CCAC290BCE0200475C56 /* StoryOne.swift in Sources */,
 				B32EF07E290AB2A300D00B6B /* MainTabBarView.swift in Sources */,
 				B32EF07A290AB2A300D00B6B /* ContentView.swift in Sources */,
 				B32EF07D290AB2A300D00B6B /* Storage.swift in Sources */,
+				0081CCA4290BCDD500475C56 /* Storyboard.swift in Sources */,
 				B32EF086290AB2A300D00B6B /* GameScreenView.swift in Sources */,
 				B32EF080290AB2A300D00B6B /* Colors.swift in Sources */,
 				B32EF088290AB2A700D00B6B /* LaunchScreenView.swift in Sources */,
@@ -221,11 +246,14 @@
 				B32EF08D290AB66B00D00B6B /* WinGameScreen.swift in Sources */,
 				B32EF07C290AB2A300D00B6B /* WanderlustApp.swift in Sources */,
 				1F35A106290BDFCB00B01C8C /* AvatarSelectorView.swift in Sources */,
+				0081CCAF290BCE0200475C56 /* Playthegame.swift in Sources */,
 				B32EF07F290AB2A300D00B6B /* Country.swift in Sources */,
 				B32EF081290AB2A300D00B6B /* ProfileScreenView.swift in Sources */,
+				0081CCAD290BCE0200475C56 /* StoryTwo.swift in Sources */,
 				B32EF083290AB2A300D00B6B /* WorldScreenViewModel.swift in Sources */,
 				B32EF087290AB2A700D00B6B /* BackgroundView.swift in Sources */,
 				B32EF084290AB2A300D00B6B /* CoutryView.swift in Sources */,
+				0081CCAB290BCE0200475C56 /* StoryThree.swift in Sources */,
 				B32EF089290AB2A700D00B6B /* VoiceButtonView.swift in Sources */,
 				B32EF082290AB2A300D00B6B /* WorldScreenView.swift in Sources */,
 				B32EF07B290AB2A300D00B6B /* AppData.swift in Sources */,
