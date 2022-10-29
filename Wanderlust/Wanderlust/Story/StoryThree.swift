@@ -9,16 +9,12 @@ import SwiftUI
 
 struct StoryThree: View {
     var body: some View {
-        VStack{
-            
-            
+        VStack {
             HStack  {
                 Image("Granny")
                     .resizable()
                     .frame(width: 96 , height: 96)
                     .aspectRatio(contentMode: .fill)
-              
-                
                 Text("Yes! Because on this day we celebrate our family members by remembering them.They are here with us, we just can’t see them! That’s why we use happy colours.")
                     .fontWeight(.medium)
                     .foregroundColor(Color.white)
@@ -27,14 +23,13 @@ struct StoryThree: View {
                     .background(Rectangle().fill(Color.blue).shadow(radius: 2))
                     .cornerRadius(15)
               
-            } .padding()
+            }.padding()
             HStack {
                 Text("But are they sad because they died?")
                     .fontWeight(.medium)
                     .foregroundColor(Color.white)
                     .lineLimit(20)
                     .padding()
-                  
                     .background(Rectangle().fill(Color.orange).shadow(radius: 2))
                     .cornerRadius(15)
             
@@ -43,9 +38,7 @@ struct StoryThree: View {
                     .frame(width: 96 , height: 96)
                     .aspectRatio(contentMode: .fill)
                     
-            } .padding()
-            
-            
+            }.padding()
             HStack  {
                 Image("Granny")
                     .resizable()

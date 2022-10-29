@@ -10,26 +10,13 @@ import SwiftUI
 struct Playthegame: View {
     var body: some View {
         VStack {
-            HStack {
-                VStack {
-                    Image ("SkullFlowerss")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                    
-                    
-                    
-                }
-                
-                
-                
-                
-                
-            }
+            Image ("SkullFlowerss")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
             Button {
                 print("Button pressed")
             } label: {
                 Text("Play the game")
-                
                     .font(.title2)
                     .fontWeight(.semibold)
                     .foregroundColor(Color.white)
@@ -45,11 +32,10 @@ struct Playthegame: View {
         }
     }
 }
-    
-    
-    struct Playthegame_Previews: PreviewProvider {
-        static var previews: some View {
-            Playthegame()
-        }
+
+struct Playthegame_Previews: PreviewProvider {
+    static var previews: some View {
+        Playthegame()
     }
+}
 

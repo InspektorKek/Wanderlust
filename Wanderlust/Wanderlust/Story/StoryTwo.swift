@@ -21,19 +21,22 @@ struct StoryTwo: View {
                     .padding()
                     .background(Rectangle().fill(Color.blue).shadow(radius: 2))
                     .cornerRadius(15)
-            } 
-            HStack {
-                Text("How?")
-                    .fontWeight(.medium)
-                    .foregroundColor(Color.white)
-                    .padding()
-                    .background(Rectangle().fill(Color.orange).shadow(radius: 2))
-                    .cornerRadius(15)
-                
-                Image("BambinoDue")
-                    .resizable()
-                    .frame(width: 96 , height: 96)
-                    .aspectRatio(contentMode: .fill)
+            }
+            HStack() {
+                Spacer()
+                HStack() {
+                    Text("How?")
+                        .fontWeight(.medium)
+                        .foregroundColor(Color.white)
+                        .padding()
+                        .background(Rectangle().fill(Color.orange).shadow(radius: 2))
+                        .cornerRadius(15)
+                    
+                    Image("BambinoDue")
+                        .resizable()
+                        .frame(width: 96 , height: 96)
+                        .aspectRatio(contentMode: .fill)
+                }
             }
             HStack  {
                 Image("Granny")

@@ -17,21 +17,24 @@ struct StoryOne: View {
                 .background(Rectangle().fill(Color.green).shadow(radius: 2))
                 .cornerRadius(15)
                 .padding(.all)
+            HStack() {
+                HStack() {
+                    Image("Bambino")
+                        .resizable()
+                        .frame(width: 96 , height: 96)
+                        .aspectRatio(contentMode: .fill)
+                    Text("Let's hear the story my granmother told me!")
+                        .fontWeight(.medium)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Rectangle().fill(Color.orange).shadow(radius: 2))
+                        .cornerRadius(15)
+                }
+                .padding(.horizontal)
+                Spacer()
+            }
             
-            HStack {
-                Image("Bambino")
-                    .resizable()
-                    .frame(width: 96 , height: 96)
-                    .aspectRatio(contentMode: .fill)
-                Text("Let's hear the story my granmother told me!")
-                    .fontWeight(.medium)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Rectangle().fill(Color.orange).shadow(radius: 2))
-                    .cornerRadius(15)
-            } 
-            
-            VStack {
+            VStack(spacing: 40) {
                 HStack {
                     Image ("chili")
                         .resizable()
