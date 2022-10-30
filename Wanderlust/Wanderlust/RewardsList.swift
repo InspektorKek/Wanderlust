@@ -1,5 +1,5 @@
 //
-//  List1.swift
+//  RewardsList.swift
 //  Wanderlust
 //
 //  Created by Alfonso Di Monda on 25/10/22.
@@ -8,13 +8,13 @@
 import Foundation
 import SwiftUI
 
-struct Rewardslistofyou: View {
+struct RewardsList: View {
     var body: some View {
         NavigationStack {
             NavigationLink {
                 // AvatarView
             } label: {
-                SwiftUIView1()
+                AvatarAndNameView()
                     Spacer()
             }
             
@@ -103,16 +103,12 @@ struct Rewardslistofyou: View {
                 }
             }
             .listStyle(PlainListStyle())
-            // .navigationTitle("Rewards")
         }
     }
-    
-    struct Rewardslistofyou_Previews: PreviewProvider {
-        static var previews: some View {
-            Rewardslistofyou()
-            
-        }
+}
+struct Rewardslistofyou_Previews: PreviewProvider {
+    static var previews: some View {
+        RewardsList()
+        
     }
-    
-    
 }
