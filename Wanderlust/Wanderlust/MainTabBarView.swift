@@ -20,10 +20,10 @@ struct MainTabBarView: View {
                 }
                 .toolbar(.visible, for: .tabBar)
                 .toolbarBackground(.visible, for: .tabBar)
-            ProfileScreenView()
-                .tabItem {
-                    Label("Profile", systemImage: "person.crop.circle.fill")
-                }
+//            ProfileScreenView()
+//                .tabItem {
+//                    Label("Profile", systemImage: "person.crop.circle.fill")
+//                }
         }
         .navigationBarBackButtonHidden(true)
         .tint(.accentColor)
