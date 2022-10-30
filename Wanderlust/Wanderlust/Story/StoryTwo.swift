@@ -51,19 +51,48 @@ struct StoryTwo: View {
                     .background(Rectangle().fill(Color.blue).shadow(radius: 2))
                     .cornerRadius(15)
             }
+            
             HStack {
+                Image("Taco")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 120, height: 100)
+                Spacer()
+                Image("icon_chips")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 120, height: 100)
+            }
+            .padding()
+            HStack {
+                Spacer()
                 Text("Are those the orange flowers that we see everywhere?")
                     .fontWeight(.medium)
                     .foregroundColor(Color.white)
                     .padding()
                     .background(Rectangle().fill(Color.orange).shadow(radius: 2))
                     .cornerRadius(15)
-                
                 Image("BambinoDue")
                     .resizable()
                     .frame(width: 96 , height: 96)
                     .aspectRatio(contentMode: .fill)
             }
+            Spacer(minLength: 24)
+            HStack(spacing: 40) {
+                Image("icon_story_flowers")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80, height: 80)
+                Image("icon_story_flowers_green")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80, height: 80)
+                Image("icon_story_flowers_yellow")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 80, height: 80)
+            }
+            .padding()
         }
         .padding(.all)
     }

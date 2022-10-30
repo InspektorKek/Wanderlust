@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct Playthegame: View {
+    @Binding var isPlayGameTapped: Bool
+    
     var body: some View {
         VStack {
             Image ("SkullFlowerss")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             Button {
-                print("Button pressed")
+                isPlayGameTapped = true
             } label: {
                 Text("Play the game")
                     .font(.title2)
@@ -32,10 +34,3 @@ struct Playthegame: View {
         }
     }
 }
-
-struct Playthegame_Previews: PreviewProvider {
-    static var previews: some View {
-        Playthegame()
-    }
-}
-

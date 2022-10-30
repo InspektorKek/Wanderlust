@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct WinGameScreen: View {
-    @Environment(\.presentationMode) var presentationMode
-    
+    @Binding var shouldShow: Bool
     var country: Country
     
     var body: some View {
@@ -51,14 +50,8 @@ struct WinGameScreen: View {
                 
                 
                 Spacer()
-                
-                Text("You've unlocked another country!")
-                    .font(.system(size: 23))
-                    .foregroundColor(.black)
-                
-                
                 Button(action: {
-                    presentationMode.wrappedValue.dismiss()
+                    shouldShow.toggle()
                 }
                        , label: {
                     Text("Got to the Map")
@@ -77,6 +70,6 @@ struct WinGameScreen: View {
 
 struct WinGameScreen_Previews: PreviewProvider {
     static var previews: some View {
-        WinGameScreen(country: Country(name: .mexico, isAvailable: true))
+        WinGameScreen(shouldShow: .constant(false), country: Country(name: .mexico, isAvailable: true))
     }
 }

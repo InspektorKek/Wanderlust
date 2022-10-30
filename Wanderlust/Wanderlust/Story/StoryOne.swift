@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct StoryOne: View {
+    @State private var animationAmount = 1.0
+    
     var body: some View {
         VStack{
-            Text("Hi Miguel! Have you ever heard about the Day of the Dead? It's an important tradition in Mexico")
-                .padding(.all)
-                .fontWeight(.medium)
-                .foregroundColor(Color.white)
-                .background(Rectangle().fill(Color.green).shadow(radius: 2))
-                .cornerRadius(15)
-                .padding(.all)
+            Group {
+                Text("Hi \(Text("Meguel").foregroundColor(Color.blue))! Have you ever heard about the Day of the Dead? It's an important tradition in Mexico!")
+                    .padding(.all)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.white)
+                    .background(Rectangle().fill(Color.green).shadow(radius: 2))
+                    .cornerRadius(15)
+                    .padding(.all)
+            }
             HStack() {
                 HStack() {
                     Image("Bambino")
@@ -54,7 +58,21 @@ struct StoryOne: View {
                         .frame(width: 100, height: 100)
                 }
             }
-            
+            Image("scroll_down_arrow")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 100)
+                .foregroundColor(Color.accentColor)
+                .scaleEffect(animationAmount)
+                            .animation(
+                                .linear(duration: 0.3)
+                                    .delay(0.5)
+                                    .repeatForever(autoreverses: true),
+                                value: animationAmount)
+                            .onAppear {
+                                animationAmount = 1.2
+                            }
+            Spacer()
         }
     }
 }

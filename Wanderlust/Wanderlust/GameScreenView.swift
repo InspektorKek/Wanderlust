@@ -10,34 +10,35 @@ import SwiftUI
 struct GameScreenView: View {
     @Environment(\.dismiss) var dismiss
     
+    @Binding var isGameFlowPresented: Bool
     @State private var isGamePresented = false
-    @State private var isLosePresented = false
-    @State private var isWinPresented = false
     
-    let game = EmojiMemoryGameViewModel(theme: DefaultThemes.theme0)
+    @ObservedObject var game = EmojiMemoryGameViewModel(theme: DefaultThemes.theme0)
     var country: Country
     
     var body: some View {
         NavigationView {
             VStack {
                 if isGamePresented {
-                    ImageMemoryGameView(viewModel: game)
+                    if game.isFinished {
+                        WinGameScreen(shouldShow: $isGameFlowPresented, country: country)
+                    } else {
+                        ImageMemoryGameView(viewModel: game)
+                    }
                 } else {
-                    
+                    Storyboard(isPlayGameTapped: $isGamePresented)
                 }
-//                .fullScreenCover(isPresented: $isWinPresented) {
-//                    WinGameScreen(country: country)
-//                }
-//                .fullScreenCover(isPresented: $isLosePresented, content: GameResults.init)
             }
             .navigationTitle(country.name.rawValue)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        dismiss()
-                    } label: {
-                        Image(systemName: "xmark")
+                if !game.isFinished {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            dismiss()
+                        } label: {
+                            Image(systemName: "xmark")
+                        }
                     }
                 }
             }
@@ -48,6 +49,6 @@ struct GameScreenView: View {
 
 struct GameScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        GameScreenView(country: Country(name: .southAfrica, isAvailable: true))
+        GameScreenView(isGameFlowPresented: .constant(false), country: Country(name: .southAfrica, isAvailable: true))
     }
 }

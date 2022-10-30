@@ -8,20 +8,16 @@
 import SwiftUI
 
 struct Storyboard: View {
+    @Binding var isPlayGameTapped: Bool
+    
     var body: some View {
         VStack {
             ScrollView {
                 StoryOne()
                 StoryTwo()
                 StoryThree()
-                Playthegame()
+                Playthegame(isPlayGameTapped: $isPlayGameTapped)
             }
         }
-    }
-}
-
-struct Storyboard_Previews: PreviewProvider {
-    static var previews: some View {
-        Storyboard()
     }
 }
