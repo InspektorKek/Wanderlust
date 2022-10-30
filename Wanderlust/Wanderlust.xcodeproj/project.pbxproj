@@ -19,7 +19,6 @@
 		B32EF07E290AB2A300D00B6B /* MainTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93553C290A977400092912 /* MainTabBarView.swift */; };
 		B32EF07F290AB2A300D00B6B /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D4429070B3900B97B35 /* Country.swift */; };
 		B32EF080290AB2A300D00B6B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9078258290947FE004B2BD4 /* Colors.swift */; };
-		B32EF081290AB2A300D00B6B /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */; };
 		B32EF082290AB2A300D00B6B /* WorldScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */; };
 		B32EF083290AB2A300D00B6B /* WorldScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */; };
 		B32EF084290AB2A300D00B6B /* CoutryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39C51462907E490009F245F /* CoutryView.swift */; };
@@ -70,7 +69,6 @@
 		B35F659629085C06007C7161 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		B35F659829085D8C007C7161 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 		B35F659B29087B6D007C7161 /* GameScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreenView.swift; sourceTree = "<group>"; };
-		B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenView.swift; sourceTree = "<group>"; };
 		B37ECB0928FE912A007DA273 /* Wanderlust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wanderlust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderlustApp.swift; sourceTree = "<group>"; };
 		B37ECB1028FE912C007DA273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 				B32EF08C290AB66B00D00B6B /* GameResults.swift */,
 				B32EF08B290AB66B00D00B6B /* WinGameScreen.swift */,
 				B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */,
-				B370A11E2907D5F5007D19AE /* ProfileScreenView.swift */,
 				B35F659B29087B6D007C7161 /* GameScreenView.swift */,
 				B3458D3F2906FFD700B97B35 /* WorldScreenView.swift */,
 				B3458D412906FFE200B97B35 /* WorldScreenViewModel.swift */,
@@ -331,7 +328,6 @@
 				0081CCAF290BCE0200475C56 /* Playthegame.swift in Sources */,
 				B32EF07F290AB2A300D00B6B /* Country.swift in Sources */,
 				B3B13E95290C1E65000EE76F /* GridLayout.swift in Sources */,
-				B32EF081290AB2A300D00B6B /* ProfileScreenView.swift in Sources */,
 				0081CCAD290BCE0200475C56 /* StoryTwo.swift in Sources */,
 				B32EF083290AB2A300D00B6B /* WorldScreenViewModel.swift in Sources */,
 				B32EF087290AB2A700D00B6B /* BackgroundView.swift in Sources */,
