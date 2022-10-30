@@ -10,7 +10,6 @@
 		1A5777362907DD8800D0A8D3 /* AvatarAndNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5777352907DD8800D0A8D3 /* AvatarAndNameView.swift */; };
 		1A5777382907E21F00D0A8D3 /* RewardsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5777372907E21F00D0A8D3 /* RewardsList.swift */; };
 		B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */; };
-		B37ECB0F28FE912A007DA273 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37ECB0E28FE912A007DA273 /* ContentView.swift */; };
 		B37ECB1128FE912C007DA273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1028FE912C007DA273 /* Assets.xcassets */; };
 		B37ECB1528FE912C007DA273 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		1A5777372907E21F00D0A8D3 /* RewardsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsList.swift; sourceTree = "<group>"; };
 		B37ECB0928FE912A007DA273 /* Wanderlust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wanderlust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderlustApp.swift; sourceTree = "<group>"; };
-		B37ECB0E28FE912A007DA273 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B37ECB1028FE912C007DA273 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B37ECB1228FE912C007DA273 /* Wanderlust.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wanderlust.entitlements; sourceTree = "<group>"; };
 		B37ECB1428FE912C007DA273 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				B37ECB0C28FE912A007DA273 /* WanderlustApp.swift */,
-				B37ECB0E28FE912A007DA273 /* ContentView.swift */,
 				1A5777372907E21F00D0A8D3 /* RewardsList.swift */,
 				1A5777352907DD8800D0A8D3 /* AvatarAndNameView.swift */,
 				B37ECB1028FE912C007DA273 /* Assets.xcassets */,
@@ -146,7 +143,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A5777362907DD8800D0A8D3 /* AvatarAndNameView.swift in Sources */,
-				B37ECB0F28FE912A007DA273 /* ContentView.swift in Sources */,
 				1A5777382907E21F00D0A8D3 /* RewardsList.swift in Sources */,
 				B37ECB0D28FE912A007DA273 /* WanderlustApp.swift in Sources */,
 			);
