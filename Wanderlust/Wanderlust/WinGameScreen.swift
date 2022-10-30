@@ -9,6 +9,8 @@ import SwiftUI
 
 struct WinGameScreen: View {
     @Binding var shouldShow: Bool
+    @AppStorage("isMexicoRawardGained") var isMexicoRawardGained = false
+    
     var country: Country
     
     var body: some View {
@@ -51,6 +53,7 @@ struct WinGameScreen: View {
                 
                 Spacer()
                 Button(action: {
+                    isMexicoRawardGained = true
                     shouldShow.toggle()
                 }
                        , label: {

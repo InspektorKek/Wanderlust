@@ -18,12 +18,6 @@ struct AppData {
     @Storage(key: "rewards", defaultValue: defaultRewards)
     static var rewards: [Reward]
     
-    @Storage(key: "user_selected_avatar_image_name", defaultValue: "icon_kid_1")
-    static var userSelectedAvatarImageName: String
-    
-    @Storage(key: "user_name", defaultValue: "")
-    static var userName: String
-    
     @Storage(key: "is_avatar_selection_screen_shown", defaultValue: false)
     static var isAvatarScreenShown: Bool
 }

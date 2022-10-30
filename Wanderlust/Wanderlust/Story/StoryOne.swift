@@ -9,11 +9,12 @@ import SwiftUI
 
 struct StoryOne: View {
     @State private var animationAmount = 1.0
+    @AppStorage("user_name") var userName = "Helena"
     
     var body: some View {
         VStack{
             Group {
-                Text("Hi \(Text("Meguel").foregroundColor(Color.blue))! Have you ever heard about the Day of the Dead? It's an important tradition in Mexico!")
+                Text("Hi \(Text(userName).foregroundColor(Color.circlePurple))! Have you ever heard about the Day of the Dead? It's an important tradition in Mexico!")
                     .padding(.all)
                     .fontWeight(.bold)
                     .foregroundColor(Color.white)

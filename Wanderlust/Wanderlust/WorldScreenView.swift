@@ -14,11 +14,15 @@ struct WorldScreenView<Model>: View where Model: CoutriesViewModel {
     @State private var size: CGSize = .zero
     @State private var isGameFlowPresented = false
     
+    @AppStorage("user_name") var userName = "Helena"
+    
     var body: some View {
         VStack {
             Spacer()
-            Text("Choose country!")
+            Text("Hey \(Text(userName).foregroundColor(Color.circlePurple)), choose the country!")
                 .font(.largeTitle)
+                .multilineTextAlignment(.center)
+                .padding()
             Spacer()
             Image("icon_map_world")
                 .background {

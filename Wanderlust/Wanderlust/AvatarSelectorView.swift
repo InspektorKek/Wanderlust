@@ -17,25 +17,18 @@ struct OvalTextFieldStyle: TextFieldStyle {
     }
 }
 
-struct Avatar: Identifiable {
-    let imageName: String
-    var isSelected: Bool
-    
-    let id = UUID()
-}
-
 struct AvatarScreenView: View {
     @Environment(\.presentationMode) var presentationMode
     
-    @State private var lastSelectedImageName: String = AppData.userSelectedAvatarImageName
-    @State private var avatarName: String = ""
+    @AppStorage("user_selected_avatar_image_name") var lastSelectedImageName = "icon_kid_1"
+    @AppStorage("user_name") var userName = ""
     @State private var didTap: Bool = false
     
-    @State var arrayOfAvatars: [Avatar] = [
-        Avatar(imageName: "icon_kid_1", isSelected: true),
-        Avatar(imageName: "icon_kid_2", isSelected: false),
-        Avatar(imageName: "icon_kid_3", isSelected: false),
-        Avatar(imageName: "icon_kid_4", isSelected: false),
+    @State var kidImages: [String] = [
+        "icon_kid_1",
+        "icon_kid_2",
+        "icon_kid_3",
+        "icon_kid_4",
     ]
     
     var body: some View {
@@ -45,32 +38,25 @@ struct AvatarScreenView: View {
                 Image(lastSelectedImageName)
                     .resizable()
                     .scaledToFit()
-                TextField("Your name...", text: $avatarName)
+                TextField(userName.isEmpty ? "Your name..." : userName, text: $userName)
                     .foregroundColor(.black)
                     .textFieldStyle(OvalTextFieldStyle())
                 HStack(spacing: 16) {
-                    ForEach(arrayOfAvatars.indices, id: \.self) { index in
+                    ForEach(kidImages, id: \.self) { name in
                         Button(action: {
-                            if let index = arrayOfAvatars.firstIndex(where: { $0.imageName == lastSelectedImageName }) {
-                                arrayOfAvatars[index].isSelected.toggle()
-                            }
-                            lastSelectedImageName = arrayOfAvatars[index].imageName
-                            arrayOfAvatars[index].isSelected.toggle()
+                            lastSelectedImageName = name
                         }){
-                            let entity = arrayOfAvatars[index]
-                            Image(entity.imageName)
+                            Image(name)
                                 .resizable()
                                 .frame(width: 43, height: 100)
                                 .padding()
-                                .border(entity.isSelected ? .orange : .gray, width: 4)
-                                .background(entity.isSelected ? .orange.opacity(0.2) : .gray.opacity(0.2))
+                                .border(name == lastSelectedImageName ? .orange : .gray, width: 4)
+                                .background(name == lastSelectedImageName ? .orange.opacity(0.2) : .gray.opacity(0.2))
                         }
                     }
                 }
                 Spacer()
                 Button(action: {
-                    AppData.userSelectedAvatarImageName = lastSelectedImageName
-                    AppData.userName = avatarName
                     presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Text("Save")
