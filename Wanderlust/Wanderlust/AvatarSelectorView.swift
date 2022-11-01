@@ -71,8 +71,9 @@ struct AvatarScreenView: View {
                 })
             }
             .navigationTitle("Avatar")
-            .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(.visible, for: .navigationBar)
+            .toolbarBackground(.visible, for: .bottomBar)
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

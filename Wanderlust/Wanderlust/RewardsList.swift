@@ -27,7 +27,7 @@ struct RewardsList: View {
                             .fontWeight(.semibold)
                         Divider()
                         HStack {
-                            Image(systemName: "rewards")
+                            Image("rewards")
                                 .foregroundColor(.black)
                             Image("Mexico")
                                 .resizable()
@@ -108,12 +108,14 @@ struct RewardsList: View {
             .navigationBarTitleDisplayMode(.large)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbarBackground(.visible, for: .bottomBar)
+            .navigationBarTitleDisplayMode(.inline)
         }
         .sheet(isPresented: $isAvatarSelectorPresented) {
             AvatarScreenView()
         }
     }
 }
+
 struct Rewardslistofyou_Previews: PreviewProvider {
     static var previews: some View {
         RewardsList()

@@ -18,12 +18,16 @@ struct MainTabBarView: View {
                 .tabItem {
                     Label("Map", systemImage: "globe.europe.africa.fill")
                 }
+                .tag(0)
                 .toolbar(.visible, for: .tabBar)
                 .toolbarBackground(.visible, for: .tabBar)
             RewardsList()
                 .tabItem {
                     Label("Profile", systemImage: "person.crop.circle.fill")
                 }
+                .tag(1)
+                .toolbar(.visible, for: .tabBar)
+                .toolbarBackground(.visible, for: .tabBar)
         }
         .navigationBarBackButtonHidden(true)
         .tint(.accentColor)

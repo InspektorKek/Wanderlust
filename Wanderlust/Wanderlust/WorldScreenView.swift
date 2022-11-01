@@ -19,7 +19,7 @@ struct WorldScreenView<Model>: View where Model: CoutriesViewModel {
     var body: some View {
         VStack {
             Spacer()
-            Text("Hey \(Text(userName).foregroundColor(Color.circlePurple)), choose the country!")
+            Text("Hey \(Text(userName).foregroundColor(Color.circlePurple)), choose a country!")
                 .font(.largeTitle)
                 .multilineTextAlignment(.center)
                 .padding()
