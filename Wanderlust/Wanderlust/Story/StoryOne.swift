@@ -28,7 +28,7 @@ struct StoryOne: View {
                         .resizable()
                         .frame(width: 96 , height: 96)
                         .aspectRatio(contentMode: .fill)
-                    Text("Let's hear the story my granmother told me!")
+                    Text("Let's hear the story my grandmother told me!")
                         .fontWeight(.medium)
                         .foregroundColor(.white)
                         .padding()

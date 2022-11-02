@@ -57,7 +57,7 @@ struct WinGameScreen: View {
                     shouldShow.toggle()
                 }
                        , label: {
-                    Text("Got to the Map")
+                    Text("Go to the Map")
                 })
                 .shadow(color: .gray, radius: 5, x: 7, y: 2)
                 .buttonStyle(.borderedProminent)
